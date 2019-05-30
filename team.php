@@ -1,0 +1,212 @@
+<!--
+* I AM AN NITIAN
+* May 17 2019
+* Developer: Shubham Maurya
+* National Institute Of Technology Srinagar J&K India 190006
+* GitHub: https://github.com/pnstech
+* LinkedIn: https://www.linkedin.com/in/cyberthreatatnit/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>I Am An Nitian | Team</title>
+<link rel="icon" href="images\imnitian.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css\team.css" type="text/css"/>
+<link href="css\navbar.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity=
+"sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous">
+</script>
+</head>
+<body>
+<div class="container-f">
+<header>
+<div class="logo">
+<ul>
+<li><a href="#"><img src="images\imnitian.png"></a></li>
+<li><a href="#">I AM AN NITIAN</a></li>
+</ul>
+</div>
+<nav class="active">
+<ul>
+<li><a href="index.html" class="home">Home</a></li>
+<li><a href="index.html" class="homex">About</a></li>
+<li><a href="team.html" class="homex">Our Team</a></li>
+<li><a href="#gallary" class="homex">Gallary</a></li>
+<li><a href="#contact" class="homex">Contact Us</a></li>
+<li><a class="sub-menu">Services</a>
+<ul>
+<li><a href="#">Link-1</a></li>
+<li><a href="#">Link-2</a></li>
+<li><a href="#">Link-3</a></li>
+<li><a href="#">Link-4</a></li>
+</ul>
+</li>
+<li><a href="#" class="homex">Help</a></li>
+</ul>
+</nav>
+
+<div class="menu-toggle">
+<i class="fas fa-bars"></i>
+</div>
+</header>
+<h1 class="heading">Meet Our Team</h1>
+<div class="line"></div>
+<div class="container">
+<div class="box">
+<img src="images\varun.png">
+<h3>Varun Dev</h3>
+<p class="team">Managment Team</p>
+<p>National Institute Of Technology 
+Silchar</p>
+<ul class="social">
+<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#"><i class="fab fa-github-square"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin"></i></a></i>
+</ul>
+</div>
+<div class="box">
+<img src="images\gaurangi.jpg">
+<h3>Gaurangi Chaudhary</h3>
+<p class="team">Management Team</p>
+<p>National Institute Of Technology 
+Srinagar</p>
+<ul class="social">
+<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#"><i class="fab fa-github-square"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin"></i></a></i>
+</ul>
+</div>
+
+<div class="box">
+<img src="images\kafeel.png">
+<h3>Kafeel Rabbani</h3>
+<p class="team">Development Team</p>
+<p>National Institute Of Technology 
+Trichurapalli</p>
+<ul class="social">
+<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#"><i class="fab fa-github-square"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin"></i></a></i>
+</ul>
+</div>
+
+<div class="box">
+<img src="images\ubaid.png">
+<h3>Ubaid</h3>
+<p class="team">Management Team</p>
+<p>National Institute Of Technology 
+Srinagar</p>
+<ul class="social">
+<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#"><i class="fab fa-github-square"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin"></i></a></i>
+</ul>
+</div>
+
+<div class="box">
+<img src="images\ashish.jpg">
+<h3>Ashish Kumar</h3>
+<p class="team">Testing Team</p>
+<p>National Institute Of Technology 
+Srinagar</p>
+<ul class="social">
+<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#"><i class="fab fa-github-square"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin"></i></a></i>
+</ul>
+</div>
+
+<div class="box">
+<img src="images\sudhakshin.png">
+<h3>Sudhakshin</h3>
+<p class="team">Managment Team</p>
+<p>National Institute Of Technology 
+Srinagar</p>
+<ul class="social">
+<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#"><i class="fab fa-github-square"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin"></i></a></i>
+</ul>
+</div>
+
+<div class="box">
+<img src="images\kafeel.png">
+<h3>Kafeel Rabbani</h3>
+<p class="team">Development Team</p>
+<p>National Institute Of Technology 
+Srinagar</p>
+<ul class="social">
+<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#"><i class="fab fa-github-square"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin"></i></a></i>
+</ul>
+</div>
+
+<div class="box">
+<img src="images\varun.png">
+<h3>Varun Dev</h3>
+<p class="team">Managment Team</p>
+<p>National Institute Of Technology 
+Srinagar</p>
+<ul class="social">
+<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#"><i class="fab fa-github-square"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin"></i></a></i>
+</ul>
+</div>
+
+<div class="box">
+<img src="images\gaurangi.jpg">
+<h3>Gaurangi Chaudhary</h3>
+<p class="team">Managment Team</p>
+<p>National Institute Of Technology 
+Srinagar</p>
+<ul class="social">
+<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#"><i class="fab fa-github-square"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin"></i></a></i>
+</ul>
+</div>
+
+
+</div>
+</div>
+</body>
+<script>
+//menu toggle
+$(document).ready(function(){
+$('.menu-toggle').click(function(){
+$('nav').toggleClass('active')
+})
+})
+
+//sticky navigation bar
+$(window).on('scroll',function(){
+if($(window).scrollTop())
+{
+$('header').addClass('black');
+}
+else
+{
+$('header').removeClass('black');
+}
+})
+</script>
+
+</html>
