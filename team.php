@@ -35,9 +35,9 @@ crossorigin="anonymous">
 </div>
 <nav class="active">
 <ul>
-<li><a href="index.html" class="home">Home</a></li>
-<li><a href="index.html" class="homex">About</a></li>
-<li><a href="team.html" class="homex">Our Team</a></li>
+<li><a href="index.php" class="home">Home</a></li>
+<li><a href="index.php" class="homex">About</a></li>
+<li><a href="team.php" class="homex">Our Team</a></li>
 <li><a href="#gallary" class="homex">Gallary</a></li>
 <li><a href="#contact" class="homex">Contact Us</a></li>
 <li><a class="sub-menu">Services</a>
