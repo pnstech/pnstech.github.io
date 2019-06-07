@@ -31,13 +31,26 @@ crossorigin="anonymous">
 
 <style>
 .cnt-box span{
-font-style:italic;
-border:0 solid red;
-border-radius:35%;
-background:orange;
+background-image: linear-gradient(-45deg, rgba(256,0,0,1), rgba(247, 202, 24, 1), rgba(0,256,0,1));;
+border-radius:40%;
 padding:0 5px 0 5px;
-color:white;
+color:blue;
+font-size:17px;
+/*blinking new text*/
+           animation-name:blinker;
+           animation-duration:1s;
+           animation-timing-function: linear;
+           animation-iteration-count: infinite;
 }
+
+       @keyframes blinker
+       {
+           0%{opacity:1.0}
+           50%{opacity:0.5}
+           100%{opacity:1.0}
+       }
+
+
 </style>
 
 </head>
@@ -150,31 +163,31 @@ Here you can check out the news &amp events related to each and every NIT.</p>
 <a id="contact"></a>
 <div class="contact">
 <div class="cnt-box" style="height:100%;box-sizing:border-box;">
-<h1>News &amp Events</h1>
+<h1>News / Events</h1>
 <marquee direction="up" scrollamount="3"  behavipor="scroll"
 onmousedown="this.stop();"
  onmouseout="this.start();"
 style="font-family:sans-serif;
-color:red;height:75%; text-align:center;
-font-weight:normal;letter-spacing:1px;padding:0 4em 0 4em;">
-<p>The Further Work Will Start After Final Exams. &nbsp<span>new</span></p>
+color:red;height:75%; text-align:justify;
+font-weight:normal;letter-spacing:1px;padding:0 4em 0 4em;word-spacing:0px;">
+<p  style="border-bottom:0.2px solid rgba(128,128,128,0.5);padding-bottom: 9px;">The Further Work Will Start After Final Exams. &nbsp <span>new</span></p>
 <br/>
-<p>NIT Srinagar Is Going To Organize A 2 Day Techno-Cultural Fest Techvaganza-2019.
+<p  style="border-bottom:0.2px solid rgba(128,128,128,0.5);padding-bottom: 9px;">NIT Srinagar Is Going To Organize A 2 Day Techno-Cultural Fest Techvaganza-2019.
  <i style="color:blue;cursor:pointer;" onclick="location.href='https://www.nitsri.ac.in'">
  Click Here</i> To Register. &nbsp
 <span>new</span></p>
 <br>
-<p>Download Official Android App Of Techvaganza 2019. <i style="color:blue;cursor:pointer;" 
+<p  style="border-bottom:0.1px solid rgba(128,128,128,0.5);padding-bottom: 9px;">Download Official Android App Of Techvaganza 2019. <i style="color:blue;cursor:pointer;" 
 onclick="location.href='https://drive.google.com/file/d/1LoClqN5tYCqw8nnzE2GFOEZH4EASz2XQ/view?usp=sharing'">Click Here</i>
 &nbsp <span>new</span></p>
 <br>
-<p>I AM AN NITIAN Signed MOU With <i style="color:blue;">Engneering Today</i>.&nbsp <span>new</span></p>
+<p style="border-bottom:0.1px solid rgba(128,128,128,0.5);padding-bottom: 9px;">I AM AN NITIAN Signed MOU With <i style="color:blue;">Engneering Today</i>.&nbsp <span>new</span></p>
 <br>
-<p>Join <i style="color:blue;">DroidGeeks</i> A Club Of Android Developers Of NIT Srinagar.&nbsp <span>new</span></p>
+<p  style="border-bottom:0.1px solid rgba(128,128,128,0.5);padding-bottom: 9px;">Join <i style="color:blue;">DroidBots</i> A Club Of Android Developers Of NIT Srinagar.&nbsp <span>new</span></p>
 <br>
-<p>We Are Coming Soon.&nbsp <span>new</span></p>
+<p  style="border-bottom:0.1px solid rgba(128,128,128,0.5);padding-bottom: 9px;">We Are Coming Soon.&nbsp <span>new</span></p>
 <br>
-<p>We Are Coming Soon.&nbsp <span>new</span></p>
+<p  style="border-bottom:0.1px solid rgba(128,128,128,0.5);padding-bottom: 9px;">We Are Coming Soon.&nbsp <span>new</span></p>
  </marquee>
 </div>
 <div class="cnt-box">
@@ -283,3 +296,4 @@ $('.owl-carousel').owlCarousel({
 
 </body>
 </html>
+
