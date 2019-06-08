@@ -7,10 +7,40 @@
 * LinkedIn : https://www.linkedin.com/in/cyberthreatatnit/
 */
 
+
 @font-face {
 font-family: "got";
 src: url("fonts/Game of Thrones.ttf");
 }
+
+.announce{
+	width:80%;
+	margin-top:2%;
+	left:50%;
+	transform:translate(-50%);
+	position:relative;
+}
+
+.announce img{
+	width:12%;
+	height:12%;
+	left:50%;
+	transform:translate(-50%);
+	position:relative;
+}
+
+.announce-text{
+	left:50%;
+	transform:translate(-50%);
+	position:relative;
+	width:50%;
+	text-align:center;
+	font-size:21px;
+	padding-bottom:10px;
+	letter-spacing:0.5px;
+	color:red;
+}
+
 
 *{
 margin:0;
