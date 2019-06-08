@@ -15,7 +15,7 @@
 
 .contact .cnt-box
 {
- 	background:rgb(0,0,0);
+ 	background:rgba(0,0,0,0.9);
 	text-align:center;
 	overflow:hidden;
 	border-radius:3px;
@@ -81,5 +81,6 @@
 	margin:0 auto;
 	height:auto;
 	box-sizing:border-box;
+	}
 }
 
