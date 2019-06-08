@@ -30,6 +30,9 @@ crossorigin="anonymous">
 <link rel="stylesheet" href="js\owl.theme.default.min.css" />
 
 <style>
+body{
+ overflow-x:hidden;
+}
 .cnt-box span{
 background-image: linear-gradient(-45deg, rgba(256,0,0,1), rgba(247, 202, 24, 1), rgba(0,256,0,1));;
 border-radius:40%;
@@ -49,7 +52,57 @@ font-size:17px;
            50%{opacity:0.5}
            100%{opacity:1.0}
        }
+/*------------------------*/
 
+ #mySidenav{
+float:right;
+}
+#mySidenav a {
+  position: absolute;
+ right: -15px;
+  transition: 0.2s;
+  width: 10px;
+  padding:20px 28px 0 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 4px 0 0 4px;
+  letter-spacing:0.2px;
+}
+
+ #mySidenav a:hover {
+  right:-10px;
+}
+
+#feedback{
+top:340%;
+  background-color: #4CAF50;
+  height:120px;
+}
+
+#feedback span {
+	transform: rotate(90deg);
+	transform-origin: left 0;
+	float: left;
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:17px;
+}
+
+#contact {
+  top:360%;
+  background-color: #4CAF50;
+  height:120px;
+}
+
+#contact span {
+	transform: rotate(90deg);
+	transform-origin: left 0;
+	float: left;
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:17px;
+}
 
 </style>
 
@@ -213,6 +266,14 @@ onclick="location.href='https://drive.google.com/file/d/1LoClqN5tYCqw8nnzE2GFOEZ
 </div>
 </div>
 
+<!---->
+<div id="mySidenav" class="sidenav">
+<a  id="feedback" style=" padding:15px 28px 0 25px;" onclick="fun1()"><span>FEEDBACK</span></a>
+<a  id="contact" onclick="fun1()"><span>CONTACT</span></a>
+</div>
+<!---->
+
+
 <div class="container">
 <div>
 <p class="copyright">COPYRIGHT&nbsp<i class="far fa-copyright"></i>
@@ -298,6 +359,13 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+</script>
+
+<script>
+function fun1()
+{
+  alert("Coming Soon....");
+}
 </script>
 
 </body>
