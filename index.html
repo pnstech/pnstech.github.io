@@ -59,7 +59,7 @@ float:right;
 }
 #mySidenav a {
   position: absolute;
- right: -15px;
+  right: -15px;
   transition: 0.2s;
   width: 10px;
   padding:20px 28px 0 25px;
@@ -75,9 +75,10 @@ float:right;
 }
 
 #feedback{
-top:340%;
+top:280%;
   background-color: #4CAF50;
   height:120px;
+  cursor: pointer;
 }
 
 #feedback span {
@@ -90,9 +91,10 @@ top:340%;
 }
 
 #contact {
-  top:360%;
+  top:300%;
   background-color: #4CAF50;
   height:120px;
+  cursor: pointer;
 }
 
 #contact span {
@@ -103,6 +105,72 @@ top:340%;
 	font-weight:bold;
 	font-size:17px;
 }
+
+/*popup*/
+
+.popup{
+            background:transparent;
+            width:100%;
+            height: 100%;
+            position:absolute;
+            top:258%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+           display: none;
+        }
+
+        .popup .popup-content{
+
+            height:auto;
+            width:500px;
+            background: rgba(0,0,0,0.97);
+            padding:20px;
+            border-radius:5px 0 0 5px;
+            position:relative;
+        }
+
+        .popup .popup-content p{
+           font-size:25px;
+           font-family:xxx;
+           color:white;
+           font-weight:bold;
+        }
+
+
+     .popup .popup-content   input,.textarr{
+               margin:20px auto;
+            display:block;
+            width:70%;
+            padding: 8px;
+            border: 0.1px solid rgba(0,0,0,0.9);
+           font-size:18px;
+          font-family: serif;
+          text-align: center;
+          border-radius:7px;
+          color:rgba(0,0,0,0.9);
+        }
+
+        .popup .popup-content .textaxx{
+          background:white;
+            }
+
+        .popup .popup-content .close{
+            top:-15px;
+            left:-15px;
+            position:absolute;
+            border-radius:50%;
+            box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+            cursor:pointer;
+        }
+
+        .popup .popup-content .btn-send{
+          background:rgba(256,0,0,1);
+              text-transform: uppercase;
+              cursor:pointer;
+              color:white;
+        }
 
 </style>
 
@@ -155,9 +223,9 @@ top:340%;
 </div>
 
 <div class="announce">
-<img src="images\anc.png">
+<img src="anc.png">
 <div class="announce-text">
-<p style="font-family:got;">we are coming soon....</p>
+<p style="font-family:got;">we are requested to all the students from various nits to join <br><i style="font-family:got;">I am an nitian</i> </p>
 </div>
 </div>
 
@@ -224,12 +292,11 @@ Here you can check out the news &amp events related to each and every NIT.</p>
 </div>
 </div>
 
-
-
+  
 <a id="contact"></a>
 <div class="contact">
 <div class="cnt-box" style="height:100%;box-sizing:border-box;">
-<h1>News / Events</h1>
+  <h1>News / Events</h1>
 <marquee direction="up" scrollamount="3"  behavipor="scroll"
 onmousedown="this.stop();"
  onmouseout="this.start();"
@@ -273,12 +340,51 @@ onclick="location.href='https://drive.google.com/file/d/1LoClqN5tYCqw8nnzE2GFOEZ
 </div>
 </div>
 
-<!---->
+
+
+
+<!-- side buttons-->
 <div id="mySidenav" class="sidenav">
 <a  id="feedback" style=" padding:15px 28px 0 25px;" onclick="fun1()"><span>FEEDBACK</span></a>
-<a  id="contact" onclick="fun1()"><span>CONTACT</span></a>
+<a  id="contact" id="button" onclick="fun4()"><span>CONTACT</span></a>
 </div>
 <!---->
+
+<!--Popup-->
+<div class="popup">
+    <div class="popup-content">
+    <img src="images\cut.png" alt="close" width="22px" height="22px" onclick="fun2()" class="close">
+    <p>Give Us Your Feedback</p>
+    <input type="text" placeholder="Your Name" required="required">
+    <input type="email" placeholder="Your Email" required="required">
+    <textarea rows="3" class="textarr textaxx" placeholder="Write Your Message Here...." required="required"></textarea>
+    <input type="submit" value="Send" class="btn-send" onclick="fun3()">
+  </div>
+   </div>
+
+   <script>
+function  fun1()
+      {
+      document.querySelector(".popup").style.display="flex";    
+      }
+      function fun2(){
+      document.querySelector(".popup").style.display="none";    
+      }
+
+      function fun3()
+      {
+        alert("Thanks for your feedback!");
+      }
+      function fun4()
+      {
+        alert("we are coming soon..");
+      }
+      </script>
+
+  <!---->
+
+
+
 
 
 <div class="container">
@@ -368,12 +474,6 @@ $('.owl-carousel').owlCarousel({
 });
 </script>
 
-<script>
-function fun1()
-{
-  alert("Coming Soon....");
-}
-</script>
 
 </body>
 </html>
