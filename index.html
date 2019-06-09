@@ -9,6 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="css\popup.css" type="text/css" rel="stylesheet">
 <title>I Am An Nitian | Home</title>
 <link rel="icon" href="images\imnitian.png">
 <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet"> 
@@ -28,151 +29,6 @@ crossorigin="anonymous">
 <!--New-->
 <link rel="stylesheet" href="js\owl.carousel.min.css" />
 <link rel="stylesheet" href="js\owl.theme.default.min.css" />
-
-<style>
-body{
- overflow-x:hidden;
-}
-.cnt-box span{
-background-image: linear-gradient(-45deg, rgba(256,0,0,1), rgba(247, 202, 24, 1), rgba(0,256,0,1));;
-border-radius:40%;
-padding:0 5px 0 5px;
-color:blue;
-font-size:17px;
-/*blinking new text*/
-           animation-name:blinker;
-           animation-duration:1s;
-           animation-timing-function: linear;
-           animation-iteration-count: infinite;
-}
-
-       @keyframes blinker
-       {
-           0%{opacity:1.0}
-           50%{opacity:0.5}
-           100%{opacity:1.0}
-       }
-/*------------------------*/
-
- #mySidenav{
-float:right;
-}
-#mySidenav a {
-  position: absolute;
-  right: -15px;
-  transition: 0.2s;
-  width: 10px;
-  padding:20px 28px 0 25px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  border-radius: 4px 0 0 4px;
-  letter-spacing:0.2px;
-}
-
- #mySidenav a:hover {
-  right:-10px;
-}
-
-#feedback{
-top:280%;
-  background-color: #4CAF50;
-  height:120px;
-  cursor: pointer;
-}
-
-#feedback span {
-	transform: rotate(90deg);
-	transform-origin: left 0;
-	float: left;
-	font-family:sans-serif;
-	font-weight:bold;
-	font-size:17px;
-}
-
-#contact {
-  top:300%;
-  background-color: #4CAF50;
-  height:120px;
-  cursor: pointer;
-}
-
-#contact span {
-	transform: rotate(90deg);
-	transform-origin: left 0;
-	float: left;
-	font-family:sans-serif;
-	font-weight:bold;
-	font-size:17px;
-}
-
-/*popup*/
-
-.popup{
-            background:transparent;
-            width:100%;
-            height: 100%;
-            position:absolute;
-            top:258%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            text-align: center;
-           display: none;
-        }
-
-        .popup .popup-content{
-
-            height:auto;
-            width:500px;
-            background: rgba(0,0,0,0.97);
-            padding:20px;
-            border-radius:5px 0 0 5px;
-            position:relative;
-        }
-
-        .popup .popup-content p{
-           font-size:25px;
-           font-family:xxx;
-           color:white;
-           font-weight:bold;
-        }
-
-
-     .popup .popup-content   input,.textarr{
-               margin:20px auto;
-            display:block;
-            width:70%;
-            padding: 8px;
-            border: 0.1px solid rgba(0,0,0,0.9);
-           font-size:18px;
-          font-family: serif;
-          text-align: center;
-          border-radius:7px;
-          color:rgba(0,0,0,0.9);
-        }
-
-        .popup .popup-content .textaxx{
-          background:white;
-            }
-
-        .popup .popup-content .close{
-            top:-15px;
-            left:-15px;
-            position:absolute;
-            border-radius:50%;
-            box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
-            cursor:pointer;
-        }
-
-        .popup .popup-content .btn-send{
-          background:rgba(256,0,0,1);
-              text-transform: uppercase;
-              cursor:pointer;
-              color:white;
-        }
-
-</style>
 
 </head>
 <body>
@@ -346,21 +202,40 @@ onclick="location.href='https://drive.google.com/file/d/1LoClqN5tYCqw8nnzE2GFOEZ
 <!-- side buttons-->
 <div id="mySidenav" class="sidenav">
 <a  id="feedback" style=" padding:15px 28px 0 25px;" onclick="fun1()"><span>FEEDBACK</span></a>
-<a  id="contact" id="button" onclick="fun4()"><span>CONTACT</span></a>
+<a  id="contact" id="button" onclick="fun3()"><span>CONTACT</span></a>
 </div>
 <!---->
 
-<!--Popup-->
+<!-- feedback Popup-->
 <div class="popup">
     <div class="popup-content">
     <img src="images\cut.png" alt="close" width="22px" height="22px" onclick="fun2()" class="close">
     <p>Give Us Your Feedback</p>
-    <input type="text" placeholder="Your Name" required="required">
-    <input type="email" placeholder="Your Email" required="required">
-    <textarea rows="3" class="textarr textaxx" placeholder="Write Your Message Here...." required="required"></textarea>
-    <input type="submit" value="Send" class="btn-send" onclick="fun3()">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="3" class="textarr textaxx" placeholder="Write Your Message Here...."></textarea>
+    <input type="submit" value="Send" class="btn-send" ">
   </div>
    </div>
+
+    <!--Contact popup-->
+<div class="popupx">
+    <div class="popup-contentx">
+    <img src="images\cut.png" alt="close" width="22px" height="22px" onclick="fun4()" class="close">
+    <p>Feel Free To contact Us</p>
+   
+    <ul>
+      <li><i class="fas fa-phone-square"></i> &nbsp <span>+91-9055667606</span></li>
+      <li><i class="fas fa-phone-square"></i> &nbsp <span>+91-9055667606</span></li>
+      <li><i class="fas fa-envelope-square"></i> &nbsp <span>iamannitian@gmail.com</span></li>
+      <li><i class="fab fa-facebook-square"></i> &nbsp <a target="_blank" href="https://www.facebook.com/iamannitian">Facebook</a></li>
+      <li><i class="fab fa-instagram"></i> &nbsp <a href="https://www.instagram.com/i_am_an_nitian/" target="_blank">Instagram</a></li>
+      <li><i class="fab fa-twitter-square"></i> &nbsp <a href="#" target="_blank">Twitter</a></li>
+    </ul>
+  
+  </div>
+   </div>
+
 
    <script>
 function  fun1()
@@ -370,14 +245,13 @@ function  fun1()
       function fun2(){
       document.querySelector(".popup").style.display="none";    
       }
-
+/*for contact popup*/
       function fun3()
       {
-        alert("Thanks for your feedback!");
+        document.querySelector(".popupx").style.display="flex";    
       }
-      function fun4()
-      {
-        alert("we are coming soon..");
+      function fun4(){
+      document.querySelector(".popupx").style.display="none";    
       }
       </script>
 
