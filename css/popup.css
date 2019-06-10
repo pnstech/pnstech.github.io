@@ -189,18 +189,18 @@ top:280%;
             flex-direction: column;
             width:100%;
             align-items: flex-start;
-            padding:20px 5px 10px 92px;
+            padding:15px 5px 10px 100px;
         }
 
         .popupx .popup-contentx span {
-			font-size:16px;
+			    font-size:15px;
            color:white;
            font-family:sans-serif;
            letter-spacing: 1px;
            cursor:pointer;
-          }
+        }
           .popupx .popup-contentx  a{
-			  font-size:16px;
+			      font-size:15px;
             text-decoration: none;
             color:white;
             font-family: sans-serif;
@@ -215,14 +215,17 @@ top:280%;
         
         .popupx .popup-contentx ul li{
            list-style-type: none;
-           padding-bottom:7px;
+          
           }
-          .popupx .popup-contentx ul li i{
-           color:red;
-           font-size:1.4rem;
+         
+          .popupx .popup-contentx ul li img{
+           padding:2px;
+           background:red;
+           border-radius:50%;
            cursor:pointer;
+           margin-top:3px;
            }
-          .popupx .popup-contentx ul li i:hover{
-            color:white;
+          .popupx .popup-contentx ul li img:hover{
+            background:white;
             transition: color .5s;
            }
