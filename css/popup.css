@@ -150,7 +150,7 @@ top:280%;
     width:100%;
     height: 100%;
     position:absolute;
-    top:250%;
+    top:249%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -160,7 +160,7 @@ top:280%;
 
         .popupx .popup-contentx{
 
-            height:300px;
+            height:260px;
             width:450px;
             background: rgba(0,0,0,0.97);
             padding:20px;
@@ -189,7 +189,7 @@ top:280%;
             flex-direction: column;
             width:100%;
             align-items: flex-start;
-            padding:15px 5px 10px 100px;
+            padding:26px 5px 10px 100px;
         }
 
         .popupx .popup-contentx span {
@@ -202,19 +202,7 @@ top:280%;
         .popupx .popup-contentx span:hover{
 			    color: red;
         }
-          .popupx .popup-contentx  a{
-			      font-size:15px;
-            text-decoration: none;
-            color:white;
-            font-family: sans-serif;
-            letter-spacing: 1px;
-           }
-           .popupx .popup-contentx  a:hover{
-            color:red;
-            transition:0.5s;
-            text-decoration: underline;
-           }
-           
+                    
         
         .popupx .popup-contentx ul li{
            list-style-type: none;
@@ -223,12 +211,12 @@ top:280%;
          
           .popupx .popup-contentx ul li img{
            padding:2px;
-           background:rgba(256,256,256,0.9);
+           background:rgba(256,0,0,0.9);
            border-radius:50%;
            cursor:pointer;
-           margin-top:3px;
+           margin-top:8px;
            }
           .popupx .popup-contentx ul li img:hover{
-            background:red;
+            background:white;
             transition: color .5s;
            }
