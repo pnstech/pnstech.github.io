@@ -199,6 +199,9 @@ top:280%;
            letter-spacing: 1px;
            cursor:pointer;
         }
+        .popupx .popup-contentx span:hover{
+			    color: red;
+        }
           .popupx .popup-contentx  a{
 			      font-size:15px;
             text-decoration: none;
@@ -220,12 +223,12 @@ top:280%;
          
           .popupx .popup-contentx ul li img{
            padding:2px;
-           background:red;
+           background:rgba(256,256,256,0.9);
            border-radius:50%;
            cursor:pointer;
            margin-top:3px;
            }
           .popupx .popup-contentx ul li img:hover{
-            background:white;
+            background:red;
             transition: color .5s;
            }

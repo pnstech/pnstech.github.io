@@ -60,7 +60,7 @@
 	.wrapper .banner{
 	width:100%;
 	height:98%;
-	background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), 
+	background:linear-gradient(rgba(256,256,256,0.05),rgba(256,256,256,0.05)), 
 	url(peopleyc.jpg) 100% 100% no-repeat;
 	background-size:cover;
 	-webkit-clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 89%);
