@@ -13,41 +13,24 @@
 	src: url("fonts/Game of Thrones.ttf");
 	}
 	
-	.announce{
-		width:80%;
-		margin-top:2%;
-		left:50%;
-		transform:translate(-50%);
-		position:relative;
-	}
-	
-	.announce img{
-		width:12%;
-		height:12%;
-		left:50%;
-		transform:translate(-50%);
-		position:relative;
-	}
-	
-	.announce-text{
-		left:50%;
-		transform:translate(-50%);
-		position:relative;
-		width:50%;
-		text-align:center;
-		font-size:21px;
-		padding-bottom:10px;
-		letter-spacing:0.5px;
-		color:red;
-	}
-	
-	
 	*{
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
 	font-family:'Dosis',sans-serif;
 	
+	}
+	#loader{
+		width:100%;
+		height:100vh;
+		background:#fff url('loader.gif');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size:20rem;
+		position: fixed;
+		z-index:555;
+		overflow-y:hidden;
+		overflow-x: hidden;
 	}
 	
 	.wrapper{
@@ -71,9 +54,9 @@
 	
 	
 	.banner .textx{
-		top:48%;
+		top:50%;
 		left:50%;
-		transform:translate(-50%,-48%);
+		transform:translate(-50%,-50%);
 		position:absolute;
 		width:100%;
 		text-align:center;

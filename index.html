@@ -31,7 +31,10 @@ crossorigin="anonymous">
 <link rel="stylesheet" href="js\owl.theme.default.min.css" />
 
 </head>
-<body>
+<body onload="loadme()">
+<div id="loader">
+</div>
+
 <div class="wrapper">
 <header>
 <div class="logo">
@@ -43,10 +46,10 @@ crossorigin="anonymous">
 <nav class="active">
 <ul>
 <li><a href="index.html" class="home">Home</a></li>
-<li><a href="#about" class="homex">About</a></li>
-<li><a href="team.html" class="homex">Our Team</a></li>
+<li><a href="#about" class="homex">Our team</a></li>
+<li><a href="team.html" class="homex">News</a></li>
 <li><a href="#gallary" class="homex">Gallary</a></li>
-<li><a href="#contact" class="homex">Contact Us</a></li>
+<li><a href="#" class="homex">About Us</a></li>
 <li><a class="sub-menu">Exams</a>
 <ul>
 <li><a href="#">Jee</a></li>
@@ -80,13 +83,6 @@ crossorigin="anonymous">
 <div class="center">
 <div class="down">
 </div>
-</div>
-</div>
-
-<div class="announce">
-<img src="images\anc.png">
-<div class="announce-text">
-<p style="font-family:xxx;">we are coming soon....</p>
 </div>
 </div>
 
@@ -202,7 +198,6 @@ Here you can check out the news &amp events related to each and every NIT.</p>
 <!-- side buttons-->
 <div id="mySidenav" class="sidenav">
 <a  id="feedback" style=" padding:15px 28px 0 25px;" onclick="fun1()"><span>FEEDBACK</span></a>
-<a  id="contact" id="button" onclick="fun3()"><span>CONTACT</span></a>
 </div>
 <!---->
 
@@ -215,20 +210,6 @@ Here you can check out the news &amp events related to each and every NIT.</p>
     <input type="email" placeholder="Your Email">
     <textarea rows="3" class="textarr textaxx" placeholder="Write Your Message Here...."></textarea>
     <input type="submit" value="Send" class="btn-send" ">
-  </div>
-   </div>
-    <!--Contact popup-->
-<div class="popupx">
-    <div class="popup-contentx">
-    <img src="images\cut.png" alt="close" width="22px" height="22px" onclick="fun4()" class="close">
-    <p>Feel Free To contact Us</p>
-   
-    <ul>
-        <li><img  src="images\phone.png" width="27px" height="27px" > &nbsp <span>+91-9055667606</span></li>
-        <li><img  src="images\phone.png" width="27px" height="27px" > &nbsp <span>+91-9055667606</span></li>
-        <li><img  src="images\email.png" width="27px" height="27px" > &nbsp <span>iamannitian@gmail.com</span></li>
-    </ul>
-  
   </div>
    </div>
    <script>
@@ -252,8 +233,7 @@ function  fun1()
 <div class="container">
 <div>
 <p class="copyright">COPYRIGHT&nbsp<i class="far fa-copyright"></i>
-2019&nbsp | &nbspI AM AN NITIAN&nbsp |&nbsp  DEVELOPED AT NIT SRINAGAR&nbsp
- |&nbsp DEVELOPED BY SHUBHAM MAURYA</p>
+2019&nbsp| &nbsp I AM AN NITIAN&nbsp |&nbsp DESIGNED AND DEVELOPED BY SHUBHAM MAURYA &nbsp|&nbsp NIT SRINAGAR</p>
 </div>
 </div>
 </div>
@@ -332,6 +312,13 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+</script>
+<script>
+var loaderx=document.getElementById('loader');
+function loadme()
+{
+  loaderx.style.display='none';
+}
 </script>
 </body>
 </html>

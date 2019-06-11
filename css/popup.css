@@ -25,6 +25,7 @@ font-size:17px;
 /*------------------------*/
 
  #mySidenav{
+  
 float:right;
 }
 #mySidenav a {
@@ -45,7 +46,7 @@ float:right;
 }
 
 #feedback{
-top:280%;
+top:150%;
   background-color: #4CAF50;
   height:120px;
   cursor: pointer;
@@ -60,21 +61,6 @@ top:280%;
 	font-size:17px;
 }
 
-#contact {
-  top:300%;
-  background-color: #4CAF50;
-  height:120px;
-  cursor: pointer;
-}
-
-#contact span {
-	transform: rotate(90deg);
-	transform-origin: left 0;
-	float: left;
-	font-family:sans-serif;
-	font-weight:bold;
-	font-size:17px;
-}
 
 /* feedback popup*/
 
@@ -83,7 +69,7 @@ top:280%;
             width:100%;
             height: 100%;
             position:absolute;
-            top:250%;
+            top:120%;
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -141,82 +127,3 @@ top:280%;
               cursor:pointer;
               color:white;
         }
-
-        /*Contact popup*/
-
-        
-.popupx{
-    background:transparent;
-    width:100%;
-    height: 100%;
-    position:absolute;
-    top:249%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-   display: none;
-}
-
-        .popupx .popup-contentx{
-
-            height:260px;
-            width:450px;
-            background: rgba(0,0,0,0.97);
-            padding:20px;
-            border-radius:5px 0 0 5px;
-            position:relative;
-        }
-        
-
-        .popupx .popup-contentx p{
-            font-size:28px;
-            font-family:xxx;
-            color:white;
-            font-weight:bold;
-         }
-         .popupx .popup-contentx .close{
-            top:-15px;
-            left:-15px;
-            position:absolute;
-            border-radius:50%;
-            box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
-            cursor:pointer;
-        }
-
-        .popupx .popup-contentx ul {
-            display: flex;
-            flex-direction: column;
-            width:100%;
-            align-items: flex-start;
-            padding:26px 5px 10px 100px;
-        }
-
-        .popupx .popup-contentx span {
-			    font-size:15px;
-           color:white;
-           font-family:sans-serif;
-           letter-spacing: 1px;
-           cursor:pointer;
-        }
-        .popupx .popup-contentx span:hover{
-			    color: red;
-        }
-                    
-        
-        .popupx .popup-contentx ul li{
-           list-style-type: none;
-          
-          }
-         
-          .popupx .popup-contentx ul li img{
-           padding:2px;
-           background:rgba(256,0,0,0.9);
-           border-radius:50%;
-           cursor:pointer;
-           margin-top:8px;
-           }
-          .popupx .popup-contentx ul li img:hover{
-            background:white;
-            transition: color .5s;
-           }
