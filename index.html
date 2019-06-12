@@ -9,6 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
   <link href="css\popup.css" type="text/css" rel="stylesheet">
 <title>I Am An Nitian | Home</title>
 <link rel="icon" href="images\imnitian.png">
@@ -50,9 +51,9 @@ crossorigin="anonymous">
 <nav class="active">
 <ul>
 <li><a href="index.html" class="home">Home</a></li>
-<li><a href="#about" class="homex">Our team</a></li>
-<li><a href="team.html" class="homex">News</a></li>
-<li><a href="#gallary" class="homex">Gallary</a></li>
+<li><a href="team.html" class="homex">Our team</a></li>
+<li><a href="#" class="homex">News</a></li>
+<li><a href="#gallary" class="homex">Gallery</a></li>
 <li><a href="#" class="homex">About Us</a></li>
 <li><a class="sub-menu">Exams</a>
 <ul>
@@ -89,18 +90,7 @@ crossorigin="anonymous">
 </div>
 </div>
 </div>
-<script>
-  function funalert()
-  {
-      document.querySelector(".popup").style.display="none";    
-    swal({
-  title: "Thank You For Your Feedback!",
-  text: "",
-  icon: "success",
-});
-  }
 
-</script>
 <div class="nit-logos">
 <div class="owl-carousel owl-theme">
 <div class="item"><img src="images\nit-logo\nit trichy.png"><p>nit trichy</p></div>
@@ -333,7 +323,6 @@ function carousel() {
     x[myIndex-1].style.display = "block"; 
     setTimeout(carousel, 3000); 
 }
-
 </script>
 <!--Logo Slide show-->
 <script type="text/javascript" src="js\jquery.min.js"></script>
@@ -371,6 +360,19 @@ function loadme()
 {
   loaderx.style.display='none';
 }
+</script>
+
+
+<script>
+    function funalert()
+    {
+        document.querySelector(".popup").style.display="none";    
+      swal({
+    title: "Thank You For Your Feedback!",
+    text: "",
+    icon: "success",
+  });
+    }
 </script>
 </body>
 </html>
