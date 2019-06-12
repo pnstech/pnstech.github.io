@@ -37,6 +37,7 @@ crossorigin="anonymous">
 </style>
 </head>
 <body onload="loadme()">
+  <button id="back-to-top"><i class="fas fa-angle-double-up"></i></button>
 <div id="loader">
 </div>
 
@@ -239,7 +240,7 @@ function  fun1()
  
       <div class="app" >
           <div><p>Download Our Android App</p>
-          <button onclick="location.href='https://drive.google.com/file/d/1LoClqN5tYCqw8nnzE2GFOEZH4EASz2XQ/view?usp=sharing'">Download</button></div>
+          <button onclick="location.href='https://drive.google.com/file/d/1LoClqN5tYCqw8nnzE2GFOEZH4EASz2XQ/view?usp=sharing'">Download Now</button></div>
           <div><img src="images/androidx.png" width="80%""> </div>
         </div>  
     <div class="datay">
@@ -373,6 +374,43 @@ function loadme()
     icon: "success",
   });
     }
+</script>
+<!--Back to top Button-->
+<script>
+const backToTop = document.querySelector('#back-to-top');
+window.addEventListener('scroll',scrollFunction);
+function scrollFunction()
+{
+  if(window.pageYOffset>300)
+  {
+    if(!backToTop.classList.contains('btnEntrance'))
+    {
+      backToTop.classList.remove('btnExit');
+      backToTop.classList.add('btnEntrance');
+      backToTop.style.display='block';
+    }
+
+  }
+  else
+  {
+    if(backToTop.classList.contains('btnEntrance'))
+    {
+      backToTop.classList.remove('btnEntrance');
+      backToTop.classList.add('btnExit');
+      setTimeout(function(){
+        backToTop.style.display='none';
+      },250);
+
+    }
+
+  }
+}
+backToTop.addEventListener('click',backTop);
+function backTop()
+{
+window.scrollTo(0,0);
+}
+
 </script>
 </body>
 </html>

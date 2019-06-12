@@ -421,8 +421,8 @@ footer{
 	font-size:18px;
 	border:none;
 	margin-top:5%;
-	width:11rem;
-	height:40px;
+	width:12rem;
+	height:38px;
 	left:50%;
 	transform: translate(-50%);
 	position: relative;
@@ -432,5 +432,77 @@ footer{
 	cursor:pointer;
 }
 
-
+/*back to top button*/
+#back-to-top{
+	z-index:1445;
+	bottom:20px;
+	right:20px;
+	position:fixed;
+	font-size:26px;
+	width:45px;
+	height:45px;
+	color:rgba(0,0,0,0.9);
+	background:rgba(256,256,256,0.8);
+	cursor:pointer;
+	outline:none;
+	border: 3px solid rgba(0,0,0,01);
+	border-radius:50%;
+	transition-duration:0.2s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, color;
+	display:none;
+}
  
+#back-to-top:hover, #back-to-top:focus{
+	color:rgba(0,0,0,1);
+	background-color: rgba(256,256,256,1);
+}
+
+@media (max-width: 768px)
+{
+	#back-to-top{
+		font-size:18px;
+		width:32px;
+	}
+}
+
+/*Zoom in*/
+.btnEntrance{
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	animation-name:btnEntrance;
+}
+
+@keyframes btnEntrance
+{
+	from{
+		opacity:0;
+		transform:scale3d(0.3,0.3,0.3);
+	}
+	to{
+		opacity:1;
+	}
+}
+/*Zoom Out*/
+.btnExit{
+	animation-duration: 0.25s;
+	animation-fill-mode: both;
+	animation-name:btnExit;
+}
+
+@keyframes btnExit
+{
+ from{
+	 opacity:1;
+ }
+ to{
+	 opacity:0;
+	 transform:scale3d(0.3,0.3,0.3);
+ }
+}
+
+/** This property is not compatible with all the browsers so try to use js*/
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
