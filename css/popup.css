@@ -78,7 +78,6 @@ top:150%;
         }
 
         .popup .popup-content{
-
             height:auto;
             width:500px;
             background: rgba(0,0,0,0.97);
@@ -87,15 +86,17 @@ top:150%;
             position:relative;
         }
 
+      
         .popup .popup-content p{
            font-size:28px;
            font-family:xxx;
-           color:white;
+           color:rgba(256,256,256,0.9);
            font-weight:bold;
         }
 
 
      .popup .popup-content   input,.textarr{
+      background:rgba(256,256,256,0.9);
                margin:20px auto;
             display:block;
             width:70%;
@@ -108,9 +109,7 @@ top:150%;
           color:rgba(0,0,0,0.9);
         }
 
-        .popup .popup-content .textaxx{
-          background:white;
-            }
+      
 
         .popup .popup-content .close{
             top:-15px;

@@ -29,7 +29,11 @@ crossorigin="anonymous">
 <!--New-->
 <link rel="stylesheet" href="js\owl.carousel.min.css" />
 <link rel="stylesheet" href="js\owl.theme.default.min.css" />
-
+<!--This is for animated alert box (sweet alert libaray)-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<style>
+ 
+</style>
 </head>
 <body onload="loadme()">
 <div id="loader">
@@ -68,7 +72,7 @@ crossorigin="anonymous">
 </div>
 
 </header>
-<div class="banner">
+<div class="banner"> 
 <div class="textx">
 <p class="dynamic-text">I AM AN <span class="text"></span><p>
 <p class="msg">Join The Biggest Student Community</p>
@@ -85,7 +89,18 @@ crossorigin="anonymous">
 </div>
 </div>
 </div>
+<script>
+  function funalert()
+  {
+      document.querySelector(".popup").style.display="none";    
+    swal({
+  title: "Thank You For Your Feedback!",
+  text: "",
+  icon: "success",
+});
+  }
 
+</script>
 <div class="nit-logos">
 <div class="owl-carousel owl-theme">
 <div class="item"><img src="images\nit-logo\nit trichy.png"><p>nit trichy</p></div>
@@ -186,15 +201,14 @@ Here you can check out the news &amp events related to each and every NIT.</p>
 </div>
 </div>
 
-
+<!--
 <a id="gallary"></a> 
 <div class="gallary">
   <img class="mySlides" src="images\nature sri.jpg" >
   <img class="mySlides" src="images\nature srix.jpg" >
   <img class="mySlides" src="images\nitsri.jpg" >
 </div>
-
- 
+-->
 <!-- side buttons-->
 <div id="mySidenav" class="sidenav">
 <a  id="feedback" style=" padding:15px 28px 0 25px;" onclick="fun1()"><span>FEEDBACK</span></a>
@@ -206,10 +220,10 @@ Here you can check out the news &amp events related to each and every NIT.</p>
     <div class="popup-content">
     <img src="images\cut.png" alt="close" width="22px" height="22px" onclick="fun2()" class="close">
     <p>Give Us Your Feedback</p>
-    <input type="text" placeholder="Your Name">
+    <input type="text" placeholder="Your Name" id="username">
     <input type="email" placeholder="Your Email">
     <textarea rows="3" class="textarr textaxx" placeholder="Write Your Message Here...."></textarea>
-    <input type="submit" value="Send" class="btn-send" ">
+    <input type="submit" value="Send" class="btn-send" onclick="funalert()">
   </div>
    </div>
    <script>
@@ -230,12 +244,54 @@ function  fun1()
       }
       </script>
   <!---->
+ 
+  <footer>
+ 
+      <div class="app" >
+          <div><p>Download Our Android App</p>
+          <button>Download</button></div>
+          <div><img src="images/androidx.png" width="80%""> </div>
+        </div>  
+    <div class="datay">
+      <div><p class="y">Colleges</p>
+        <div class="linex"></div>
+      <p><a href="#">IIT</a></p>
+      <p><a href="#">NIT</a></p>
+      <p><a href="#">IIIT</a></p>
+      <p><a href="#">AIIMS</a></p>
+      </div>
+      <div>
+          <p class="y">Exams</p>
+          <div class="linex"></div>
+            <p><a href="#">Jee Advance</a></p>
+            <p><a href="#">Jee Mains</a></p>
+            <p><a href="#">Gate</a></p>
+            <p><a href="#">Neet</a></p>  
+            <p><a href="#">Gre</a></p>  
+          </div>
+      <div><p class="y">Cutoff</p>
+        <div class="linex"></div>
+        <p><a href="#">IITs </a></p>
+        <p><a href="#">NITs</a></p>
+        <p><a href="#">IIITs</a></p>
+        <p><a href="#">AIIMS</a></p></div>
+      <div><p class="y">Links</p>
+        <div class="linex"></div>
+        <p><a href="#">Disclaimer</a></p>
+        <p><a href="#">College Reviews</a></p>
+        <p><a href="#">College Ranking</a></p>
+        <p><a href="#">About Us</a></p>
+        <p><a href="#">News</a></p></div>
+    </div>
+  <div class="datad">
+  <p class="x">Feel Free To Contact Us</p>
+  <p>iamannitian@gmail.com &nbsp &nbsp| &nbsp +91-9055667606 &nbsp | &nbsp  +91-9055667606</p>
+  </div>
 <div class="container">
-<div>
 <p class="copyright">COPYRIGHT&nbsp<i class="far fa-copyright"></i>
-2019&nbsp| &nbsp I AM AN NITIAN&nbsp |&nbsp DESIGNED AND DEVELOPED BY SHUBHAM MAURYA &nbsp|&nbsp NIT SRINAGAR</p>
+2019 &nbsp| &nbsp I AM AN NITIAN &nbsp | &nbsp DESIGNED AND DEVELOPED BY SHUBHAM MAURYA &nbsp|&nbsp NIT SRINAGAR</p>
 </div>
-</div>
+</footer>
 </div>
 <script src="js\typed.min.js"></script>
 <script type="text/javascript">
@@ -277,11 +333,7 @@ function carousel() {
     x[myIndex-1].style.display = "block"; 
     setTimeout(carousel, 3000); 
 }
-//---
-function myfun()
-{
-  window.alert("Thank You For Your Feedback !");
-}	
+
 </script>
 <!--Logo Slide show-->
 <script type="text/javascript" src="js\jquery.min.js"></script>

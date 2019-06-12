@@ -47,7 +47,7 @@ font-size:13px;
 
 header .logo ul li a{
 text-decoration:none;
-color:white;
+color:rgba(256,256,256,0.8);
 letter-spacing:1px;
 }
 
@@ -84,14 +84,14 @@ header nav  ul li ul{
 
 .home{
 	background:rgba(0,0,0,0.3);	
-border-bottom:1px solid red;
-color:red;
+border-bottom:1px solid rgba(256,0,0,0.9);
+color:rgba(256,0,0,0.9);
 }
 
 .homex:hover,.sub-menu:hover{
 		background:rgba(0,0,0,0.3);	
-border-bottom:1px solid red;
-color:red;	
+border-bottom:1px solid rgba(256,0,0,0.9);
+color:rgba(256,0,0,0.9);
 }
 
 header nav  ul li:hover ul{
@@ -108,11 +108,11 @@ header nav  ul li ul li{
 
 header nav  ul li ul li:hover{
 	background:rgba(0,0,0,0.3);
-	border-bottom:1px solid red;
+	border-bottom:1px solid rgba(256,0,0,0.9);
 }
 header nav  ul li ul li a:hover
 {
-	color:red;
+	color:rgba(256,0,0,0.9);
 }
 header nav ul li a{
 	text-decoration:none;
@@ -120,7 +120,7 @@ header nav ul li a{
 	height:50px;
 	line-height:50px;
 	padding:0 20px;
-	color:white;
+	color:rgba(256,256,256,0.8);
 	font-weight:bold;
 	letter-spacing:2px;
 }
@@ -200,15 +200,14 @@ header nav  ul li ul li{
 	.home{
 	background:rgba(0,0,0,0.04);	
 border-bottom:1px solid rgba(0,0,0,0.1);
-
-color:red;
+color:rgba(256,0,0,0.9);
 }
 
 .homex:hover,.sub-menu:hover{
 		background:rgba(0,0,0,0.04);	
 border-bottom:1px solid rgba(0,0,0,0.1);
 border-top:1px solid rgba(0,0,0,0.1);
-color:red;	
+color:rgba(256,0,0,0.9);	
 }
 }
 
