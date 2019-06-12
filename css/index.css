@@ -25,25 +25,26 @@
 	#loader{
 		width:100%;
 		height:100vh;
-		background:#fff url('loader.gif');
+		background:#DfDfDf url('loader.gif');
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size:20rem;
 		position: fixed;
 		z-index:555;
-		overflow-y:hidden;
-		overflow-x: hidden;
 	}
 
 	#loader p{
-	 position:fixed;
-	 bottom:0px;
-	 font-size:12.3px;
-	   letter-spacing:0.8px;
+		position:fixed;
+		bottom:24px;
+		font-size:13px;
+	    letter-spacing:0.7px;
 		font-family:sans-serif;
 		font-weight:bold;
-		color:rgba(256,256,256,0.7);
+		color:rgba(0,0,0,0.8);
 		text-align:center;
+		left:49%;
+		transform:translate(-49%);
+		text-align:justify;
 	}
 	
 	.wrapper{
