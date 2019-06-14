@@ -133,3 +133,168 @@ top:150%;
               cursor:pointer;
               color:white;
         }
+
+        /*Signup popup*/
+        .signup{
+          background: rgba(0,0,0,0.7);
+          width:100%;
+          height: 100vh; /*it covers entire verrical height(full screen)*/
+          top:0;
+          position: fixed;
+          z-index: 555;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+           }
+
+           .signup .sign-card{
+               box-shadow:5px 5px 5px 5px rgba(0,0,0,0.9);
+               background:rgba(230,230,230,1);
+                width:60%;
+               height:90%;
+               display:flex;
+             }
+             
+             .sign-card div{
+               flex-basis: 50%;
+             }
+
+             .sign-card .sign-img{
+               display:flex;
+             }
+            
+             .sign-card .sign-img .links{
+              flex-basis: 100%;
+              border-right:1px solid rgba(200,200,200,1);
+             }
+
+             
+
+             .sign-card .sign-img div ul {
+               margin:14% 3% 0 3%;
+             padding:2%;
+             border-radius: 5px;
+             background: rgba(200,200,200,1);
+             box-shadow: 0 5px 5px 0 rgba(230,230,230,1);
+             }
+             .sign-card .sign-img .links ul li{
+             list-style-type:none;
+             border: 1px solid rgba(170,170,170,1);
+             text-align: center;
+             border-radius: 5px;
+             padding:2%;
+             margin: 3px;
+             background: rgba(230,230,230,1);
+             cursor: pointer;
+            }
+
+            .sign-card .sign-img .links ul a li{
+              text-decoration:none;
+              font-family: sans-serif;
+              font-size: 15px;
+              color:rgba(80,80,80,1);
+             }
+             .sign-card .sign-img .links ul a {
+              text-decoration:none;
+             }
+             .sign-card .sign-img .links ul a li:hover{
+             background: white;
+             transition: 0.2s;
+             }
+
+             .sign-card .sign-img div .p1{
+             font-family: sans-serif;
+             font-size:18px;
+             font-weight: bold;
+             color:rgba(80,80,80,1);
+             background: rgb(0,255,255);
+             -webkit-clip-path: polygon(76% 0, 0 0, 0 44%, 79% 45%, 54% 23%);
+             clip-path: polygon(76% 0, 0 0, 0 44%, 79% 45%, 54% 23%);
+             padding:4.5% 0 22% 8%;
+            }
+            .sign-card .sign-img div .p2{
+              text-decoration: none;
+              text-align: center;
+              font-family:sans-serif;
+              margin-top:28%;
+            }
+            .sign-card .sign-img div .p2 a{
+              text-decoration: none;
+              font-size:16px;
+              letter-spacing: 0.7px;
+              cursor: pointer;
+              color:rgba(110,110,110,1);
+            }
+            .sign-card .sign-img div .p2 a:hover{
+              color:red;
+             transition: 0.2s;
+            }
+
+             .sign-card .sign-form .cancel{
+              width:21px;
+              height:21px;
+              border-radius:50%;
+             float:right;
+             margin:6px 6px 0 0;
+              cursor:pointer;
+              opacity:0.9;
+             }
+
+             .sign-card .sign-form div{
+                display: flex;
+                flex-direction: column;
+                padding-top:1.5rem;
+                align-items: center;
+                }
+                .sign-card .sign-form div input,select{
+                  margin:5px;
+                  width:80%;
+                  padding:10px 0 10px 2px;
+                  outline: none;
+                  border:none;
+                  border-bottom: 1px solid rgba(170,170,170,1);
+                  background: transparent;
+                  font-size:15px;
+                  font-family: sans-serif;
+                  color:rgba(100,100,100,1);
+                  letter-spacing:0.6px;
+                  }
+                  
+                  .sign-card .sign-form div button{
+                    width:80%;
+                    margin-top:2rem;
+                    padding:10px;
+                    background:#4CAF50;
+                    border:none;
+                    border-radius:4px;
+                    font-size:17px;
+                    color:white;
+                    font-family: sans-serif;
+                    cursor: pointer;
+                  }
+
+                  .sign-card .sign-form div a{
+                    text-decoration: none;
+                    font-family: sans-serif;
+                    margin-top:15px;
+                    font-size:14px;
+                    letter-spacing:0.6px;
+                    cursor: pointer;
+                  }
+                  .sign-card .sign-form div a:hover{
+                    color:red;
+                    transition: 0.3s;
+                  }
+                  
+             .sign-card .sign-form  p{
+              color:rgba(80,80,80,1);
+              font-size:31px;
+              font-weight:bold;
+              font-family:sans-serif;
+              text-align: center;
+              margin-top:35px;
+              text-transform: uppercase;
+            }
+
+            
+            

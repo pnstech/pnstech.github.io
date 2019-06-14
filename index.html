@@ -42,7 +42,6 @@ crossorigin="anonymous">
   <button id="back-to-top"><i class="fas fa-angle-double-up"></i></button>
 <div id="loader">
 </div>
-
 <div class="wrapper">
 <header>
 <div class="logo">
@@ -80,7 +79,7 @@ crossorigin="anonymous">
 <div class="textx">
 <p class="dynamic-text">I AM AN <span class="text"></span><p>
 <p class="msg">Join The Biggest Student Community</p>
-<button class="join" onclick="location.href='signup.html'">Join Now</button>
+<button class="join" onclick="show_signup()">Join Now</button>
 <div class="social">
     <a  target="_blank" href="https://www.facebook.com/iamannitian" alt="facebook"><img  src="images\fb.png"  ></a>
     <a href="https://www.instagram.com/i_am_an_nitian/" target="_blank" alt="instagram"><img  src="images\insta.png" ></a>
@@ -206,7 +205,56 @@ Here you can check out the news &amp events related to each and every NIT.</p>
 <div id="mySidenav" class="sidenav">
 <a  id="feedback" style=" padding:15px 28px 0 25px;" onclick="fun1()"><span>FEEDBACK</span></a>
 </div>
-<!---->
+<!--Signup popup-->
+<div class="signup" id="sign">
+<div class="sign-card">
+ <div class="sign-img">
+  <div class="links">
+    <p class="p1">Quick Links</p>
+    <ul>
+     <a href="#"> <li>Colleges</li></a>
+     <a href="#"> <li>Exams</li></a>
+     <a href="#"> <li>Cutoff</li></a>
+     <a href="#"> <li>News</li></a>
+     <a href="#"> <li>Events</li></a>
+     <a href="#"> <li>Important Dates</li></a>
+      </ul>
+    <p class="p2"><a href="#">privacy policy</a></p>
+  </div>
+ </div>
+ <div class="sign-form">
+   <img class="cancel" onclick="cancel()" src="images/cut.png">
+    <p>Register Here</p>
+   <div>
+   <input type="text" placeholder="Name"  onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'"><br>
+   <input type="email" placeholder="Email" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'"><br>
+   <input type="text" placeholder="Mobile Number" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
+   <select name="college" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
+      <option>Select College</option>
+      <option>National Institute Of technology Srinagar</option> 
+      <option>National Institute Of technology Srinagar Silchar</option>
+      <option>National Institute Of technology Srinagar Trichy</option>
+      <option>Motilal Nehru Institute Of Technology Allahabad</option>
+      <option>Malviya Natioanl Institute Of Technology Jaipur</option>
+      <option>Other</option>
+      </select>
+      <select name="state" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
+          <option>Select Your State</option>
+          <option>Uttar Pradesh</option>
+          <option>Jammu & Kashmir</option>
+          <option>Rajsthan</option>
+          <option>Tamilnadu</option>
+          <option>Uttrakhand</option>
+          <option>Bihar</option>
+          </select>
+          <input type="password" placeholder="Password" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
+          <input type="password" placeholder="Confirm Password" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
+          <button class="register">Register</button>
+          <a href="#">already a member? login</a>
+  </div>
+ </div>
+</div>
+</div>
 
 <!-- feedback Popup-->
 <div class="popup">
@@ -411,6 +459,15 @@ backToTop.addEventListener('click',backTop);
 function backTop()
 {
 window.scrollTo(0,0);
+}
+
+function cancel()
+{
+ document.getElementById('sign').style.display='none';
+}
+function show_signup()
+{
+  document.getElementById('sign').style.display='block';
 }
 
 </script>
