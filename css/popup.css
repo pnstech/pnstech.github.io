@@ -151,7 +151,7 @@ top:150%;
 
            .signup .sign-card{
                box-shadow:5px 5px 5px 5px rgba(0,0,0,0.9);
-               background:rgba(230,230,230,1);
+               background:rgba(220,220,220,1);
                 width:60%;
                height:90%;
                display:flex;
@@ -163,7 +163,7 @@ top:150%;
              }
              
              .sign-card div{
-               flex-basis: 50%;
+               flex:1 1 50%;
              }
 
              .sign-card .sign-img{
@@ -171,7 +171,7 @@ top:150%;
              }
             
              .sign-card .sign-img .links{
-              flex-basis: 100%;
+              flex:1 1 100%;
               border-right:1px solid rgba(200,200,200,1);
              }
 
@@ -288,6 +288,7 @@ top:150%;
                     font-size:14px;
                     letter-spacing:0.6px;
                     cursor: pointer;
+                    color:rgba(58, 83, 155, 0.9);
                   }
                   .sign-card .sign-form div a:hover{
                     color:red;
@@ -319,7 +320,7 @@ top:150%;
 
             .login .log-card{
               box-shadow:5px 5px 5px 5px rgba(0,0,0,0.9);
-              background:rgba(230,230,230,1);
+              background:rgba(220,220,220,1);
               width:33%;
               height:48%;
               display:flex;
@@ -332,7 +333,7 @@ top:150%;
             }
             .login .log-card div
             {
-              flex-basis: 70%;
+              flex:1 1 70%;
               padding:2% 10% 0 10%;
             }
             .login .log-card div input
@@ -350,18 +351,40 @@ top:150%;
               letter-spacing:0.6px;
             }
 
-            .login .log-card p{
+            .login .log-card .logx{
               color:rgba(80,80,80,1);
               font-size:31px;
               font-weight:bold;
               font-family:sans-serif;
               text-align: center;
-              margin-top:10px;
               text-transform: uppercase;
             }
+
+            .login .log-card div .signx {
+              font-size: 16px;
+              text-align:center;
+              margin-top:20px;
+              letter-spacing: 0.5px;
+              font-family: sans-serif;
+              }
+
+            .login .log-card div .signx a{
+              color:rgba(58, 83, 155, 0.9);
+              text-decoration: none;
+              font-family: sans-serif;
+              margin-top:15px;
+              font-size:14px;
+              letter-spacing:0.8px;
+              cursor: pointer;
+            }
+            .login .log-card div .signx a:hover{
+              color:rgba(256,0,0,0.7);
+              transition: 0.2s;
+              }
+
             .login .log-card div button{
               width:90%;
-              margin:2rem 0 0 10px;
+              margin:1.5rem 0 0 10px;
               padding:10px;
               background:#4CAF50;
               border:none;
@@ -380,4 +403,52 @@ top:150%;
               margin:6px 0 0 6px;
               cursor:pointer;
               opacity:0.8;
+            }
+
+            /*Search popup*/
+            .search-popup
+            {
+              box-shadow:0 0 10px 0 rgba(0,0,0,0.9);
+              z-index:111;
+              width:26%;
+              right:6%;
+              top:11.2%;
+              position: fixed;
+              clip-path: polygon(93% 0, 90% 35%, 100% 47%, 100% 100%, 0 100%, 0 38%, 77% 38%);
+              padding:3.5% 7.7px 0.8% 7px;
+              background:rgba(120,120,120,1);
+            }
+          
+            .search-popup button{
+              width:10%;
+              padding:9.6px 0 9.6px 0;
+              border:none;
+              border-left:1px solid rgba(160,160,160,1);
+              background:rgba(230,230,230,0.9);
+              border-radius:0 5px 5px 0;
+              cursor:pointer;
+            }
+          
+            .search-popup i{
+              color:rgba(110,110,110,1);
+              font-size:16px;
+            }
+            .search-popup button:hover{
+              background:rgba(280,280,280,1);
+              transition: 0.2s;
+            }
+
+            .search-popup input
+            {
+              border-radius:5px 0 0 5px;
+              background:rgba(230,230,230,0.9);
+              text-align:center;
+              font-size:15.5px;
+              font-family: sans-serif;
+              padding:2.7%;
+              width:90%;
+              outline:none;
+              border:none;
+              position: relative;
+              color:rgba(110,110,110,1);
             }

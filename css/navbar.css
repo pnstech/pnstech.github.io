@@ -126,6 +126,26 @@ header nav ul li a{
 	letter-spacing:2px;
 }
 
+header nav ul li button{
+	font-size:15.22px;
+	text-decoration:none;
+	display:block;
+	height:50px;
+	line-height:50px;
+	padding:0 20px;
+	color:rgba(256,256,256,0.8);
+	font-weight:bold;
+	letter-spacing:2px;
+	background:transparent;
+	border:none;
+	outline:none;
+	cursor:pointer;
+}
+header nav ul li button:hover{
+	color:rgba(256,0,0,0.9);
+	background:rgba(0,0,0,0.4);	
+	border-bottom:1px solid rgba(256,0,0,1);
+}
 .menu-toggle{
 	float:right;
 	line-height:50px;

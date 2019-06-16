@@ -65,7 +65,9 @@ crossorigin="anonymous">
 <li><a href="#">Gre</a></li>
 </ul>
 </li>
-<li><a href="#" class="homex">Help</a></li>
+<li><!--<a  class="homex" style="cursor:pointer;" id="clicks">Search <i class="fas fa-search"></i></a>-->
+<button onclick="search()"> Search <i class="fas fa-search"></i></button>
+</li>
 </ul>
 </nav>
 
@@ -73,6 +75,28 @@ crossorigin="anonymous">
 <i class="fas fa-bars"></i>
 </div>
 
+<script>
+  var action=1;
+function search()
+{
+  if(action==1)
+ {
+  document.getElementById('searchx').style.display='block';
+  action=2;
+ }
+ else
+ {
+  document.getElementById('searchx').style.display='none';
+  action=1;
+ }
+}
+</script>
+
+<!--serach Box-->
+<div class="search-popup" id="searchx" style="display:none;">
+    <input type="text"  placeholder="Search"><button><i class="fas fa-search"></i></button>
+  </div>
+  <!--xxxxx-->
 </header>
 <div class="banner"> 
 <div class="textx">
@@ -246,7 +270,7 @@ Here you can check out the news & events related to each and every NIT.</p>
           <input type="password" placeholder="Password" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
           <input type="password" placeholder="Confirm Password" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
           <button class="register">Register</button>
-          <a href="#">already a member? login</a>
+          <a onclick="show_log();cancel();">already a member? login</a>
   </div>
  </div>
 </div>
@@ -256,11 +280,12 @@ Here you can check out the news & events related to each and every NIT.</p>
 <div class="login" id="log" style="display:none;">
 <div class="log-card">
     <img class="cancel-log"  src="images/cut.png" onclick="cancel_log()">
-    <p>Login</p>
+    <p class="logx">Login</p>
 <div>
   <input type="text" placeholder="Email / Phone" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
   <input type="password" placeholder="Password" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
   <button>Login</button>
+  <p class="signx"><a onclick="show_signup();cancel_log();">new member? register</a></p>
 </div>
 </div>
 </div>
@@ -421,8 +446,8 @@ function loadme()
 {
   loaderx.style.display='none';
   setTimeout(function(){ 
-    document.getElementById('log').style.display="block";
-   }, 5000);
+   show_log();
+   }, 5000); 
 }
 </script>
 
@@ -478,6 +503,11 @@ function cancel()
 {
  document.getElementById('sign').style.display='none';
 }
+
+function show_log()
+   {
+    document.getElementById('log').style.display="block";
+   }
 
 function cancel_log()
 {
