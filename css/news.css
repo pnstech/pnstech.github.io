@@ -3,46 +3,67 @@
     display: flex;
     width:100%;
     height:auto;
-    background:blue;
     justify-content: center;
     padding: 0;
 }
 
 .news .side-left{
-   background:yellow;
    flex:1 1 10%;
 }
 
 .news .mid{
-   background:green;
+   background: rgba(250,250,250,1);
    flex:1 1 50%;
    display: flex;
    flex-direction: column;
-   padding: 1rem;
-   border:2px solid blue;
+   padding: 0.6rem;
+   border:2px solid rgba(120,120,120,1);
 }
 
 .news .mid div{
-   margin:2px;
+    margin:2px;
      display: flex;
-     flex-direction: row;
+     flex-direction:row;
 }
+
+.news .mid .xxx{
+   border:1px solid rgba(120,120,120,1);
+   margin:6px;
+}
+
+.mid button{
+   outline:none;
+   border:none;
+   border-radius:4px;
+   padding:8px;
+   width:35%;
+   left:50%;
+   transform: translate(-50%);
+   position: relative;
+   font-family: sans-serif;
+   margin-top:10px;
+   background:#4CAF50;
+   font-size:15px;
+   cursor: pointer;
+   color:white;
+   font-weight: bold;
+}
+
 .news .mid .n-image{
-background:cyan;
 width:8rem;
 height:8rem;
 margin-right:10px;
  }
 
  .news .mid .n-article{
-background:white;
+color:rgba(60,60,60,1);
 width:80%;
 height:8rem;
 padding: 10px;
 text-align:justify;
 font-family: sans-serif;
 line-height:1.5rem;
-border:1px solid cyan;
+background: rgba(200,200,200,1);
  }
 
  .news .mid .n-article p a
@@ -53,24 +74,73 @@ font-family: sans-serif;
 padding:5px;
 border-radius:2px;
 font-weight: bold;
+font-size:15px;
+   }
+
+   .mid .n-head{
+      color:rgba(80,80,80,1);
+      font-size:25px;
+      font-weight:bold;
+      font-family:sans-serif;
+      text-align: center;
+      margin:10px 0 10px 0;
+      text-transform: uppercase;
    }
 
    .news .mid .n-article p a:hover
  {
-  color:red;
+  color:rgba(256,0,0,0.6);
    }
 
  .news .mid img{
    width:100%;
    height:100%;
-   border:1px solid gray;
-   padding:1px;
+    padding:1px;
  }
 .news .side-right{
-   background:rgb(204, 204, 189);
    flex:1 1 40%;
    padding: 1rem;
-   border:2px solid blue;
-   margin-left:2rem; 
+}
+
+@media (max-width:721px)
+{
+   .news
+   {
+    flex-direction:column;
+  }
+
+  .news .mid
+   {
+    border:none;
+  }
+
+  .news  .mid div
+  {
+   flex-direction:column;
+   width:100%;
+
+}
+
+.news .mid .xxx
+{
+   border:2px solid rgba(120,120,120,1);
+   padding-right:10.2px;
+}
+
+.news  .mid .n-image
+  {
+   width:100%;
+}
+
+.news .mid .n-article
+{
+   width:100%;
+   height:10rem;
+}
+  
+.mid button{
+   width:50%;
+}
+
 }
 
