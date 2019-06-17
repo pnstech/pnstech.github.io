@@ -21,21 +21,24 @@ width:70%;
 {position:relative;
 -ms-touch-action:pan-Y;
 touch-action:manipulation;
--moz-backface-visibility:hidden}
+-moz-backface-visibility:hidden
+}
 .owl-carousel .owl-stage:after
 {content:".";
 display:block;
 clear:both;
 visibility:hidden;
 line-height:0;
-height:0}
+height:0;
+}
 .owl-carousel .owl-stage-outer
 {position:relative;
 overflow:hidden;
--webkit-transform:translate3d(0,0,0)
+-webkit-transform:translate3d(0,0,0);
 }
 .owl-carousel .owl-item,.owl-carousel .owl-wrapper
-{-webkit-backface-visibility:hidden;
+{
+-webkit-backface-visibility:hidden;
 -moz-backface-visibility:hidden;
 -ms-backface-visibility:hidden;
 -webkit-transform:translate3d(0,0,0);
@@ -68,8 +71,8 @@ padding:7px;
 left:50%;
 transform:translate(-50%);
 position:relative;
-border:1px solid rgba(0,0,0,0.4);
-	background:rgba(0,0,0,0.1);
+border:1px solid rgba(100,100,100,1);
+	background:rgba(230,230,230,1);
 	border-radius:50%;
 	padding:0.8em;
 cursor:pointer;
@@ -78,7 +81,7 @@ height:130px;
 }
 /*by x*/
 .owl-carousel .owl-item img:hover{
-	  border:5px solid rgba(0,0,0,0.1);
+	  border:5px solid rgba(180,180,180,1);
 }
 
 .owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled
