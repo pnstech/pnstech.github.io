@@ -12,12 +12,12 @@
 }
 
 .news .mid{
-   background: rgba(250,250,250,1);
+   background: transparent;
    flex:1 1 50%;
    display: flex;
    flex-direction: column;
    padding: 0.6rem;
-   border:2px solid rgba(120,120,120,1);
+   border:2px solid rgba(120,120,120,0.7);
 }
 
 .news .mid div{
@@ -27,7 +27,7 @@
 }
 
 .news .mid .xxx{
-   border:1px solid rgba(120,120,120,1);
+   border:1px solid rgba(120,120,120,0.6);
    margin:6px;
 }
 
@@ -63,7 +63,7 @@ padding: 10px;
 text-align:justify;
 font-family: sans-serif;
 line-height:1.5rem;
-background: rgba(200,200,200,1);
+background:rgba(230,230,230,01);
  }
 
  .news .mid .n-article p a
@@ -98,10 +98,46 @@ font-size:15px;
     padding:1px;
  }
 .news .side-right{
-   flex:1 1 40%;
-   padding: 1rem;
+   height:526px;
+   flex:0 0  25%;
+padding:0.6rem 0.8rem 0 0.2rem;
+   background: transparent;
+   border:2px solid rgba(120,120,120,0.7);
+   display: flex;
+flex-direction: column;  
+margin:0 9rem 0 6rem;
+}
+.news .side-right .yyy{
+   color:rgba(80,80,80,1);
+   font-size:25px;
+   font-weight:bold;
+   font-family:sans-serif;
+   text-align: center;
+   margin:10px 0 10px 0;
+   text-transform: uppercase;
 }
 
+.news .side-right .updates{
+background: transparent;
+width:100%;
+left:50%;
+transform: translate(-50%);
+position: relative;
+padding: 0.2rem;
+border:1px solid rgba(60,60,60,0.6);
+margin: 5px;
+}
+
+.updates .n-update{
+   color:rgba(60,60,60,1);
+   width:100%;
+   height:6rem;
+   padding: 10px;
+   text-align:justify;
+   font-family: sans-serif;
+   line-height:1.5rem;
+   background:rgba(240,240,240,1);
+}
 @media (max-width:721px)
 {
    .news
@@ -144,3 +180,25 @@ font-size:15px;
 
 }
 
+
+/*Blinker*/
+
+.updates .n-update span{
+   background-image: linear-gradient(-45deg, rgba(256,0,0,1), rgba(247, 202, 24, 1), rgba(0,256,0,1));;
+   border-radius:40%;
+   padding:0 5px 0 5px;
+   color:blue;
+   font-size:17px;
+   /*blinking new text*/
+              animation-name:blinker;
+              animation-duration:1s;
+              animation-timing-function: linear;
+              animation-iteration-count: infinite;
+   }
+   
+          @keyframes blinker
+          {
+              0%{opacity:1.0}
+              50%{opacity:0.3}
+              100%{opacity:1.0}
+          }

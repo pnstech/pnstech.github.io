@@ -204,7 +204,7 @@
 		transform: translate(-50%);
 		position: relative;
 		height: 300px;
-		background:rgba(248,248,248,1);
+		background:rgba(248,248,248,0.4);
 	}
 	.about .about-img{
 		margin-right:4%;
@@ -225,7 +225,6 @@
 	.about div  p
 	{ 
 		letter-spacing:0.7px;
-		font-size:16px;
 		line-height:28px;
 		word-spacing:0.5px;
 		font-family:sans-serif;

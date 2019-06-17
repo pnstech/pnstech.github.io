@@ -11,25 +11,7 @@
 body{
  overflow-x:hidden;
 }
-.cnt-box span{
-background-image: linear-gradient(-45deg, rgba(256,0,0,1), rgba(247, 202, 24, 1), rgba(0,256,0,1));;
-border-radius:40%;
-padding:0 5px 0 5px;
-color:blue;
-font-size:17px;
-/*blinking new text*/
-           animation-name:blinker;
-           animation-duration:1s;
-           animation-timing-function: linear;
-           animation-iteration-count: infinite;
-}
 
-       @keyframes blinker
-       {
-           0%{opacity:1.0}
-           50%{opacity:0.5}
-           100%{opacity:1.0}
-       }
 /*------------------------*/
 
  #mySidenav{
@@ -112,11 +94,11 @@ top:150%;
           text-align: center;
           border-radius:4px;
           outline: none;
-          border: 1px solid rgba(210,210,210,1);
+          border: 1px solid rgba(200,200,200,1);
           background: transparent;
           font-size:15px;
           font-family: sans-serif;
-          color:rgba(140,140,140,1);
+          color:rgba(130,130,130,1);
           letter-spacing:0.6px;
         }
 
