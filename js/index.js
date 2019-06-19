@@ -1,3 +1,9 @@
+/*
+** Author: Shubham Maurya
+** I AM AN NITIAN
+*/
+
+
 /*---> Logo Slider <---*/
 
 $('.owl-carousel').owlCarousel({
