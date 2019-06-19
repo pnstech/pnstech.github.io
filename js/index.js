@@ -46,9 +46,9 @@ var loaderx=document.getElementById('loader');
 function loadme()
 {
  loaderx.style.display='none';
- /* setTimeout(function(){ 
+setTimeout(function(){ 
    show_log();
-   }, 5000); */
+   }, 5000); 
 }
 
 /*---> Alert Box <---*/
