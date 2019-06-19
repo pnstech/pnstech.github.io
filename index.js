@@ -1,9 +1,14 @@
+/*
+** I AM AN NITIAN
+** Author: Shubham Maurya
+*/
 /*---> Logo Slider <---*/
 
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
-	 autoplay:true,
+   autoplay:true,
+
     autoplayTimeout:1500,
     autoplayHoverPause:true,
     responsiveClass:true,
