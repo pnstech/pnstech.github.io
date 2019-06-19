@@ -12,7 +12,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Dosis',sans-serif;
+font-family:sans-serif;
 }
 
 header{
@@ -37,19 +37,18 @@ font-weight:bold;
 header .logo img{
 width:55px;
 height:55px;
-
 }
 
 header .logo li{
 list-style:none;
 position:relative;
 font-size:13px;
+font-weight: bold;
 }
 
 header .logo ul li a{
 text-decoration:none;
 color:rgba(256,256,256,0.8);
-letter-spacing:1px;
 }
 
 header nav{
@@ -74,13 +73,13 @@ header nav ul li{
 list-style:none;
 position:relative;
 padding-right:5px;
-font-size:15.2px;
+font-size:15px;
 }
 
 header nav  ul li ul{
 	position:absolute;
 	background:rgba(0,0,0,0.04);
-	displaY:none;
+	display:none;
 }
 
 .home{
@@ -104,12 +103,13 @@ header nav  ul li ul li{
 	width:113px;
 	font-weight:normal;
 	text-align:center;
-	font-size:15.2px;
+	font-size:15px;
 }
 
 header nav  ul li ul li:hover{
 	background:rgba(0,0,0,0.3);
 	border-bottom:1px solid rgba(256,0,0,0.9);
+	font-weight: bold;
 }
 header nav  ul li ul li a:hover
 {
@@ -120,10 +120,10 @@ header nav ul li a{
 	display:block;
 	height:50px;
 	line-height:50px;
-	padding:0 20px;
+	padding:0 18px;
 	color:rgba(256,256,256,0.8);
 	font-weight:bold;
-	letter-spacing:2px;
+	letter-spacing:0.8px;
 }
 
 header nav ul li button{

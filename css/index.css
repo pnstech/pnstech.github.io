@@ -18,7 +18,7 @@
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
-	font-family:'Dosis',sans-serif;
+	font-family:sans-serif;
 	}
 
 	body{
@@ -68,7 +68,6 @@
 	{
 		font-weight:bold;
 		font-size:40px;
-		font-family:sans-serif;
 		color:rgba(256,256,256,0.9);
 		letter-spacing:1.5px;
 		padding-bottom:20px;
@@ -78,7 +77,6 @@
 		font-weight:bold;
 		font-size:46px;
 		text-align:center;
-		font-family:sans-serif;
 		letter-spacing:2px;
 	}
 	
@@ -87,7 +85,6 @@
 		text-transform:uppercase;
 		color:rgba(256,256,256,0.9);
 		font-size:41px;
-		font-family:sans-serif;
 		font-weight:bold;
 		padding-bottom:30px;
 	}
@@ -102,7 +99,6 @@
 		font-size:16.5px;
 		font-weight:bold;
 		letter-spacing:1.6px;
-		font-family:sans-serif;
 		box-sizing:border-box;
 		cursor:pointer;
 	}
@@ -227,7 +223,6 @@
 		letter-spacing:0.7px;
 		line-height:28px;
 		word-spacing:0.5px;
-		font-family:sans-serif;
 	}
 	
 	 .datad{
@@ -240,7 +235,6 @@
 	  }
 	   .datad p{
 	  text-align:center;
-	  font-family: sans-serif;
 	  color:rgba(256,256,256,0.7);
 	  font-size:16px;
 	  font-weight: normal;
@@ -266,7 +260,6 @@
 	.container p{
 		font-size:12.3px;
 	   letter-spacing:0.8px;
-		font-family:sans-serif;
 		font-weight:bold;
 		color:rgba(256,256,256,0.7);
 		text-align:center;
@@ -308,14 +301,12 @@
 		{
 			
 			font-size:25px;
-			font-family:sans-serif;
 			text-align:center;
 			
 		}
 		
 		.text
 		{
-			font-family:sans-serif;
 			text-align:center;
 			 font-size:25px;
 		}	
@@ -352,7 +343,6 @@
  margin:1.5rem;
  height:200px;
  color:white;
- font-family: sans-serif;
 }
 
 .datay div a{

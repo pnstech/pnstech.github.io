@@ -19,6 +19,7 @@ position:relative;
 width:70%;
 }
 
+
 .owl-carousel .owl-stage
 {position:relative;
 -ms-touch-action:pan-Y;
@@ -65,7 +66,7 @@ padding:7px;
 .owl-carousel .owl-item p{
 	text-align:center;
 	text-transform:uppercase;
-	color:rgba(0,0,0,0.5);
+	color:rgba(110,110,110,1);
 	font-size:14px;
 	letter-spacing:1.2px;
 	font-weight:bold;
