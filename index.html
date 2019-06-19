@@ -42,7 +42,7 @@ crossorigin="anonymous">
 <div id="loader">
 </div>
 <div class="wrapper">
-<header>
+<header id="f">
 <div class="logo">
 <ul>
 <li><a href="#"><img src="images\imnitian.png"></a></li>
@@ -54,7 +54,7 @@ crossorigin="anonymous">
 <li><a href="index.html" class="home">Home</a></li>
 <li><a href="team.html" class="homex">Our team</a></li>
 <li><a href="#" class="homex">News</a></li>
-<li><a href="#" class="homex">About Us</a></li>
+<li><a href="#about" class="homex">About Us</a></li>
 <li><a class="sub-menu">Exams <i class="fas fa-caret-square-down"></i></a>
 <ul>
 <li><a href="#">Jee</a></li>
@@ -65,7 +65,7 @@ crossorigin="anonymous">
 </ul>
 </li>
 <li><!--<a  class="homex" style="cursor:pointer;" id="clicks">Search <i class="fas fa-search"></i></a>-->
-<button onclick="search()" style="text-transform: uppercase; font-weight: bold;">Search <i class="fas fa-search"></i></button>
+<button onclick="search()" style="text-transform: uppercase;letter-spacing: 0.8px; font-weight: bold;">Search <i class="fas fa-search"></i></button>
 </li>
 <li><a class="homex" style="cursor:pointer;">User &nbsp<i class="fas fa-user-graduate"></i></a></li>
 
@@ -76,22 +76,6 @@ crossorigin="anonymous">
 <i class="fas fa-bars"></i>
 </div>
 
-<script>
-  var action=1;
-function search()
-{
-  if(action==1)
- {
-  document.getElementById('searchx').style.display='block';
-  action=2;
- }
- else
- {
-  document.getElementById('searchx').style.display='none';
-  action=1;
- }
-}
-</script>
 
 <!--serach Box-->
 <div class="search-popup" id="searchx" style="display:none;">
@@ -290,6 +274,7 @@ function search()
 <!--News And Events-->
 
 <a id="about"></a>
+
 <div class="about">
         <div class="about-img" >
                <img src="images\us3.png" height="300px" width="100%">
@@ -542,7 +527,7 @@ function loadme()
  loaderx.style.display='none';
   setTimeout(function(){ 
    show_log();
-   }, 5000);
+   }, 5000); 
 }
 </script>
 <script>
@@ -605,5 +590,65 @@ function show_signup()
   document.getElementById('sign').style.display='block';
 }
 </script>
+
+<script>
+//scroll demo of nav bar
+//Demo-1
+/*var windw = this;
+
+$.fn.followTo = function ( pos ) {
+    var $this = this,
+        $window = $(windw);
+    
+    $window.scroll(function(e){
+        if ($window.scrollTop() > pos) {
+            $this.css({
+                position: 'absolute',
+                top: pos
+            });
+        } else {
+            $this.css({
+                position: 'fixed',
+                top: 0
+            });
+        }
+    });
+};
+
+$('#f').followTo(560);
+*/
+//Demo-2
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  document.getElementById('searchx').style.display='none';
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("f").style.top = "0";
+  } else {
+    document.getElementById("f").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+</script>
+
+<script>
+  //serch box hide show
+  var action=1;
+function search()
+{
+  if(action==1)
+ {
+  document.getElementById('searchx').style.display='block';
+  action=2;
+ }
+ else
+ {
+  document.getElementById('searchx').style.display='none';
+  action=1;
+ }
+}
+</script>
+
 </body>
 </html>
