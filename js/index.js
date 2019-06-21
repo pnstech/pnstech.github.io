@@ -4,6 +4,16 @@
 */
 
 
+
+/*Parallax Scrolling= */
+/*
+$(window).scroll(function(){
+var scroll_position=$(window).scrollTop();
+$('.news').css({
+  'background-position-x': + scroll_position + 'px',
+})
+})*/
+
 /*---> Logo Slider <---*/
 
 $('.owl-carousel').owlCarousel({
@@ -222,3 +232,37 @@ function carousel() {
     x[myIndex-1].style.display = "block"; 
     setTimeout(carousel, 3000); 
 }
+
+
+/* Ripple effect */
+
+function RippleStyle(width, height, posX, posY)
+{
+  this.width=(width<=height)? height:width;
+  this.height=(width<=height)?height:width;
+  this.top= posY-(this.height * .5);
+  this.left=posX- (this.width *.5);
+
+}
+
+$(function(){
+ $('.btn-rip').click(function(e){
+   var rippleE1= $('<span class="btn-ripple"></span>').appendTo(this);
+   
+   var pos = $(this).offset();
+   var width= $(this).outerwidth();
+   var height= $(this).outerHeight();
+   var posX=e.pageX - pos.left;
+   var posY = e.pageY - pos.top;
+
+   var rippleStyle=new RippleStyle(width,height,posX,posY);
+   rippleE1.css(rippleStyle);
+
+ });
+
+$('.btn-rip').on('animationend webkitAnimationEnd animationend MsAnimationEnd','.btn-ripple',function(){
+  $(this).remove();
+});
+
+});
+

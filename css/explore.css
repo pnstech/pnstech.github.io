@@ -1,0 +1,54 @@
+.explore{
+    width:100%;
+    margin-top:5%;
+    margin-bottom:5%;   
+}
+
+.explore .expo{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    margin:0 9rem 0 9rem;
+}
+
+.main-expo{
+    text-align: center;
+    font-weight: bold;
+    font-size:40px;
+    text-transform: uppercase;
+    color:rgba(120,120,120,1);
+}
+.expo-line{
+    margin-top:5px;
+background:red;
+width:9rem; 
+height:5px;
+left:50%;
+transform: translate(-50%);
+position: absolute;
+}
+
+.explore .expo  div{
+    background: white;
+    flex:1 1rem;
+    height:auto;
+    border-radius:5px;
+    box-shadow:1px 1px 1px 1px rgba(220,220,220,1);
+    margin:1.3rem;
+    cursor: pointer;
+}
+
+.explore .expo div img{
+ width:100px;
+ height:100px;
+ left:50%;
+ transform: translate(-50%);
+ position: relative;
+ margin-top:1rem;
+   }
+
+.explore .expo div p{
+ text-align:center;
+    color:gray;
+    padding: 0.5rem 0 0.5rem 0;
+}
