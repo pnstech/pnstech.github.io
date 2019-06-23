@@ -68,7 +68,6 @@ body{
              text-align: center;
              transform-origin:right;
              transform:scaleX(0);
-             z-index: 5;
              position: absolute;
          }
  
