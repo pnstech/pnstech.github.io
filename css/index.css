@@ -194,12 +194,12 @@
 	.about{
 		display:flex;
 		 flex-direction:row;
-		  width:80%;
+		  width:77%;
 		left:50%;
 		transform: translate(-50%);
 		position: relative;
 		height: 300px;
-		background:rgba(248,248,248,0.4);
+		background:rgba(256,256,256,1);
 	}
 	.about .about-img{
 		margin-right:4%;
@@ -213,8 +213,10 @@
 		height: 300px;
 		flex: 45%;
 		align-self:center;
-		padding:0.6rem 1rem 0 0;
-		color:rgba(80,80,80,1);
+		padding:1.5rem 1rem 0 0;
+		 color:rgba(70,70,70,1);
+		 font-size: 15px;
+		 font-weight:normal;
 		}
 	
 	.about div  p
