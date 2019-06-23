@@ -69,7 +69,7 @@ setTimeout(function(){
 
 /*---> Alert Box <---*/
 
-  function funalert()
+ /* function funalert()
   {
       document.querySelector(".popup").style.display="none";    
     swal({
@@ -77,7 +77,7 @@ setTimeout(function(){
   text: "",
   icon: "success",
 });
-  }
+  }*/
 
 /*---> Back To Top Button <---*/
 
