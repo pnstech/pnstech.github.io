@@ -402,7 +402,7 @@ footer{
 
 /*back to top button*/
 #back-to-top{
-	z-index:1445;
+	z-index:3;
 	bottom:20px;
 	right:20px;
 	position:fixed;

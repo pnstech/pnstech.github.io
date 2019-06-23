@@ -23,7 +23,7 @@ header{
 	width:100%;
 	background-color:transparent;
 	box-sizing:border-box;
-	 z-index: 12;
+	 z-index:3;
 }
 
 header .logo{
