@@ -210,13 +210,15 @@
 		height: 300px;
 	}
 	.about .about-text{
+		font-weight: normal;
 		height: 300px;
 		flex: 45%;
 		align-self:center;
-		padding:1.5rem 1rem 0 0;
-		 color:rgba(70,70,70,1);
-		 font-size: 15px;
-		 font-weight:normal;
+		padding:1.4rem 1rem 0 0;
+		color:rgba(70,70,70,1);
+		text-align:justify;
+		line-height:1.4rem;
+		font-size: 15px;
 		}
 	
 	.about div  p

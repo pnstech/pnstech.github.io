@@ -83,7 +83,7 @@ font-size:15px;
 
   .explore .expo  .xnnn p a:hover
   {
-   color:rgba(256,0,0,0.6);
+   color:rgba(256,0,0,0.8);
     }
 
    .explore .expo .xnnn .zoom{
@@ -107,7 +107,21 @@ font-size:15px;
           height:130px;
       }
 
+.more{
+    text-decoration:none;
+    left:12.2%;
+    transform: translate(-12.2%);
+    position: relative;
+    margin-top:0;
+    font-weight:bold;
+    font-size:18px;
+    cursor: pointer;
+}
+.more:hover{
+    color:rgba(256,0,0,0.8);
+}
 
+/*scroll Indicator*/
       .progress-container {
         width: 100%;
         height: 6px;
