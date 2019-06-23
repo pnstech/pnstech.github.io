@@ -48,11 +48,11 @@ $('.owl-carousel').owlCarousel({
 //display feedback box
 function  fun1()
     {
-    document.querySelector(".popup").style.display="flex";    
+      TweenMax.to('.popup',0.5,{scaleX: 1});
     }
 //hide feedbackbox onclick cut     
     function fun2(){
-    document.querySelector(".popup").style.display="none";    
+      TweenMax.to('.popup',0.5,{scaleX: 0});
     }
 
 
@@ -62,9 +62,9 @@ var loaderx=document.getElementById('loader');
 function loadme()
 {
 loaderx.style.display='none';
-/*setTimeout(function(){ 
+setTimeout(function(){ 
  show_log();
- }, 5000);*/
+ }, 5000);
 }
 
 /*---> Alert Box <---*/
@@ -119,19 +119,21 @@ window.scrollTo(0,0);
 
 function cancel()
 {
-document.getElementById('sign').style.display='none';
+  TweenMax.to('.signup',0.5,{scaleY: 0});
 }
 function show_log()
  {
-  document.getElementById('log').style.display="block";
+  /*document.getElementById('log').style.display="block";*/
+  TweenMax.to('.login',0.5,{scaleY: 1});
  }
 function cancel_log()
 {
-document.getElementById('log').style.display='none';
+  TweenMax.to('.login',0.5,{scaleY: 0});
 }
+
 function show_signup()
 {
-document.getElementById('sign').style.display='block';
+  TweenMax.to('.signup',0.5,{scaleY: 1});
 }
 
 

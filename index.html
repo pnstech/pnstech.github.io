@@ -35,12 +35,13 @@ crossorigin="anonymous">
 <body onload="loadme()">
     
   <button id="back-to-top"><i class="fas fa-angle-double-up"></i></button>
-
+  <!--Loader Screen-->
 <div id="loader">
 </div>
 
 <div class="wrapper">
  <!--Scroll Indicator-->
+
 <div class="progress-container">
     <div class="progress-bar" id="myBar"></div>
   </div>     
@@ -319,8 +320,9 @@ Here you can check out the news & events related to each and every NIT.</p>
 <div id="mySidenav" class="sidenav">
 <a  id="feedback" style=" padding:15px 28px 0 25px;" onclick="fun1()"><span>FEEDBACK</span></a>
 </div>
+
 <!--Signup popup-->
-<div class="signup" id="sign" style="display:none;">
+<div class="signup" id="sign">
 <div class="sign-card">
  <div class="sign-img">
   <div class="links">
@@ -369,8 +371,10 @@ Here you can check out the news & events related to each and every NIT.</p>
  </div>
 </div>
 </div>
+
+
 <!--Login Popup-->
-<div class="login" id="log" style="display:none;">
+<div class="login" id="log" >
 <div class="log-card">
     <img class="cancel-log"  src="images/cut.png" onclick="cancel_log()">
     <p class="logx">Login</p>
@@ -382,9 +386,10 @@ Here you can check out the news & events related to each and every NIT.</p>
 </div>
 </div>
 </div>
+
 <!--Login popup closed-->
 <!-- feedback Popup-->
-<div class="popup" style="display: none;">
+<div class="popup">
     <div class="popup-content">
     <img src="images\cut.png" alt="close" width="21px" height="21px" onclick="fun2()" class="close">
     <p>Give Us Your Feedback</p>
@@ -395,7 +400,6 @@ Here you can check out the news & events related to each and every NIT.</p>
   </div>
    </div>
   
-
    <div class="nit-logos">
     <div class="owl-carousel owl-theme">
     <div class="item"><img src="images\nit-logo\nit trichy.png"><p>nit trichy</p></div>

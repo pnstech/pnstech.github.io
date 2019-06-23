@@ -37,9 +37,9 @@ p{
     height:100vh;
     background:rgba(210,210,210,1);
     z-index: -1;
+    transform:scaleY(0);
     bottom:0;
     right:0;
     position: absolute;
-    transform:scaleY(0);
     transform-origin: bottom;
 }
