@@ -1,0 +1,13 @@
+.ask{
+width:100%;
+
+background:red;
+margin-top:5%;
+margin-bottom:2%;
+display:flex;
+flex-direction: row;
+}
+
+.ask-back{
+    background:url('images\\about.png')
+}

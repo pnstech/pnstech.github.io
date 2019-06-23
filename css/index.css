@@ -116,22 +116,16 @@
 	}
 	.banner .textx .social a{
 		text-decoration: none;
-		padding:4px;
 	}
 	.banner .textx .social a img{
 		cursor: pointer;
 		width:38px;
 		height:38px;
 		border-radius: 50%;
-	    padding:4px;
-		background:rgba(256,256,256,0.9);
+	    border: 2px solid rgba(256,256,256,0.8);
 		box-shadow:2px 2px 2px 1px rgba(256,0,0,0.2);
 	}
-	.banner .textx .social img:hover{
-		background:red;
-		transition:0.3s;
-		box-shadow:2px 2px 2px 1px rgba(256,0,0,0.1);
-	}
+	
 	
 	.center{
 		top:95%;

@@ -64,7 +64,7 @@ function loadme()
 loaderx.style.display='none';
 /*setTimeout(function(){ 
  show_log();
- }, 5000); */
+ }, 5000);*/
 }
 
 /*---> Alert Box <---*/
@@ -244,3 +244,7 @@ function carousel() {
   setTimeout(carousel, 3000); 
 }
 
+/*Gsap Login Demo*/
+document.getElementById('log').addEventListener('click',function(){
+  TweenMax.to('.login',1,{scaleY: 1});
+})
