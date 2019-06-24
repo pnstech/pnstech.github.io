@@ -62,9 +62,13 @@ var loaderx=document.getElementById('loader');
 function loadme()
 {
 loaderx.style.display='none';
-setTimeout(function(){ 
+
+TweenMax.from('.logo',0.9,{opacity:0,scale:0, ease:Bounce.easeOut});
+TweenMax.staggerFrom('.svg',0.4,{opacity:0,y:100, delay:0.5},0.2/* This is duratio9n for social widgets*/);
+
+/*setTimeout(function(){ 
  show_log();
- }, 5000);
+ }, 5000);*/
 }
 
 /*---> Alert Box <---*/
@@ -133,7 +137,8 @@ function cancel_log()
 
 function show_signup()
 {
-  TweenMax.to('.signup',0.5,{scaleY: 1});
+ /* TweenMax.to('.signup',0.5,{scaleY: 1});*/
+  TweenLite.to('.signup',0.5, { scaleY: 1});
 }
 
 
