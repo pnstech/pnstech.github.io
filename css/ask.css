@@ -1,13 +1,73 @@
 .ask{
-width:100%;
-
-background:red;
+    width:100%;
+padding: 0 9.8rem 0 9.8rem;
 margin-top:5%;
 margin-bottom:2%;
-display:flex;
-flex-direction: row;
+display: flex;
+flex-direction:row;
+align-items:center;
+justify-content:center;
+}
+.ask div{
+    flex:1  1 50%;
+    height:250px;
 }
 
-.ask-back{
-    background:url('images\\about.png')
+.ask .imgx{
+    background:linear-gradient(rgba(80,80,80,0.6),rgba(80,80,80,0.6)), 
+	url(covo.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.ask .imgx p{
+color:rgba(230,230,230,1);
+text-align:center;
+text-transform: uppercase;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+position:relative;
+font-weight:bold;
+font-size: 21px;
+line-height:2.1rem;
+}
+.ask .imgx p span{
+    font-size:35px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.ask .txtr{
+    display:flex;
+    flex-direction: column;
+align-items:center;
+justify-content: center;
+padding:0 50px 0 20px;
+background:rgba(256,256,256,0.5);
+}
+
+.ask textarea{
+    border-radius:5px;
+    width:100%;
+    color:rgba(80,80,80,1);
+    outline:none;
+    padding:10px ;
+    font-size:15px;
+    letter-spacing: 0.5px;
+}
+.ask button{
+    color:white;
+    background:#4CAF50;
+    width:100%;
+padding:0.6rem;
+border-radius: 5px;
+border:none;
+outline:none;
+cursor:pointer;
+font-size:15px;
+margin-top:5%;
+letter-spacing: 0.4px;
+}
+.ask .imgx p .xspan{
+    font-size:14px;
+    letter-spacing: 0.4px;
 }

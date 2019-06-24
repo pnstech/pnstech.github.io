@@ -196,7 +196,7 @@
 		transform: translate(-50%);
 		position: relative;
 		height: 300px;
-		background:rgba(256,256,256,1);
+		background:rgba(256,256,256,0.5);
 	}
 	.about .about-img{
 		margin-right:4%;
@@ -211,17 +211,16 @@
 		height: 300px;
 		flex: 45%;
 		align-self:center;
-		padding:1.4rem 1rem 0 0;
+		padding:0.8rem 1rem 0 0;
 		color:rgba(70,70,70,1);
 		text-align:justify;
-		line-height:1.4rem;
 		font-size: 15px;
 		}
 	
 	.about div  p
 	{ 
 		letter-spacing:0.7px;
-		line-height:28px;
+		line-height:31px;
 		word-spacing:0.5px;
 	}
 	

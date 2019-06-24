@@ -28,7 +28,7 @@ position: absolute;
 }
 
 .explore .expo  div{
-    background: white;
+  background:rgba(256,256,256,0.5);
     flex:1 1rem;
     height:auto;
     border-radius:5px;
@@ -60,7 +60,7 @@ box-shadow:none;
 }
 
 .explore .expo  .xnnn p{
-    padding:5px 15px 2px 15px;
+    padding:5px 5px 2px 5px;
     color:rgba(70,70,70,1);
     text-align:justify;
     line-height:1.4rem;
