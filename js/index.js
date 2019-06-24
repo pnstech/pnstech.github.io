@@ -62,13 +62,9 @@ var loaderx=document.getElementById('loader');
 function loadme()
 {
 loaderx.style.display='none';
-
+//for logo
 TweenMax.from('.logo',0.9,{opacity:0,scale:0, ease:Bounce.easeOut});
-
-var tl = new TimelineLite();
-//add a from() tween at the beginning of the timline
-tl.from('.textx', 0.5, {left:100, opacity:0});
-
+//for social icons
 TweenMax.staggerFrom('.svg',0.4,{opacity:0,y:100, delay:0.5},0.2/* This is duratio9n for social widgets*/);
 
 /*setTimeout(function(){ 
