@@ -69,7 +69,7 @@ TweenMax.staggerFrom('.svg',0.4,{opacity:0,y:100, delay:0.5},0.2/* This is durat
 
 /*QQQQQQQQQQQQQQQQQQQQQQQQ*/
 
-etTimeout(function(){ 
+setTimeout(function(){ 
  show_log();
  }, 5000);
 }
