@@ -14,6 +14,7 @@
 
 body{
   overflow-x:hidden;
+  outline:none;
  }
  
  /*------------------------*/
@@ -237,13 +238,15 @@ body{
                opacity:0.9;
               }
  
-              .sign-card .sign-form div{
+             .sign-card .sign-form div{
                  display: flex;
                  flex-direction: column;
                  padding-top:1.5rem;
                  align-items: center;
                  }
-                 .sign-card .sign-form div input,select{
+                     
+                
+               .signup .sign-card .sign-form div input,select{
                    margin:5px;
                    width:80%;
                    padding:10px 0 10px 2px;
@@ -254,8 +257,7 @@ body{
                    font-size:15px;
                    color:rgba(100,100,100,1);
                    letter-spacing:0.6px;
-                   }
-                   
+               }
                    .sign-card .sign-form div button{
                      width:80%;
                      margin-top:2rem;

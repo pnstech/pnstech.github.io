@@ -17,14 +17,14 @@
 .main-expo{
     text-align: center;
     font-weight: bold;
-    font-size:40px;
+    font-size:36px;
     text-transform: uppercase;
     color:rgba(120,120,120,1);
 }
 .expo-line{
     margin-top:5px;
 background:red;
-width:9rem; 
+width:8rem; 
 height:5px;
 left:50%;
 transform: translate(-50%);
