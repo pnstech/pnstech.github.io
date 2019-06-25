@@ -1,3 +1,7 @@
+*{
+  word-wrap: break-word;
+}
+
 .explore{
     width:100%;
     margin-top:4%;
@@ -28,7 +32,7 @@ position: absolute;
 }
 
 .explore .expo  div{
-  background:rgba(256,256,256,0.5);
+
     flex:1 1rem;
     height:auto;
     border-radius:5px;
@@ -130,6 +134,10 @@ font-size:15px;
 .more:hover{
     color:rgba(256,0,0,0.8);
 }
+.appx{
+  background: white;
+}
+
 
 /*scroll Indicator*/
       .progress-container {

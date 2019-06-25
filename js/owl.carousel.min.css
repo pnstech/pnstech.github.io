@@ -12,7 +12,7 @@ position:relative}
 {display:none;
 z-index:1;
 /*by x*/
-margin-top:5%;
+margin-top:2%;
 left:50%;
 transform:translate(-50%);
 position:relative;
@@ -24,7 +24,7 @@ width:80%;
 {position:relative;
 -ms-touch-action:pan-Y;
 touch-action:manipulation;
--moz-backface-visibility:hidden
+-moz-backface-visibility:hidden;
 }
 
 .owl-carousel .owl-stage:after
@@ -49,7 +49,7 @@ overflow:hidden;
 -ms-backface-visibility:hidden;
 -webkit-transform:translate3d(0,0,0);
 -moz-transform:translate3d(0,0,0);
--ms-transform:translate3d(0,0,0)
+-ms-transform:translate3d(0,0,0);
 }
 
 .owl-carousel .owl-item
