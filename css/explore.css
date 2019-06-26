@@ -35,7 +35,7 @@ position: absolute;
 
     flex:1 1rem;
     height:auto;
-    border-radius:5px;
+    border-radius:12px;
     box-shadow:1px 1px 1px 1px rgba(220,220,220,1);
     margin:1.3rem;
     cursor: pointer;
@@ -133,9 +133,12 @@ font-size:15px;
 }
 .more:hover{
     color:rgba(256,0,0,0.8);
+    
 }
 .appx{
   background: white;
+ /* background:rgba(255,196,105,0.9);*/
+ 
 }
 
 

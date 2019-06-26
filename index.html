@@ -26,7 +26,6 @@ crossorigin="anonymous">
 <link href="css\index.css" rel="stylesheet"  type="text/css">
 <link href="css\navbar.css" rel="stylesheet"  type="text/css">
 <link href="css\popup.css" type="text/css" rel="stylesheet">
-<link href="css\news.css" type="text/css" rel="stylesheet">
 <link rel="stylesheet" href="js\owl.carousel.min.css" />
 <link rel="stylesheet" href="js\owl.theme.default.min.css" />
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -302,7 +301,7 @@ Here you can check out the news & events related to each and every NIT.</p>
         </div>
       
      </div>
-     <a href="#" class="more">More News  <i class="fas fa-chevron-circle-right"></i></a>
+     <a href="news.html" class="more">More News  <i class="fas fa-chevron-circle-right"></i></a>
     </div>
 
 
@@ -311,8 +310,10 @@ Here you can check out the news & events related to each and every NIT.</p>
 <div class="ask">
   <div class="txtr">
     <div>
+      <form name="ask" action="">
         <input type="text" placeholder="Topic" class="inpx">
         <textarea placeholder="Write Your Question Here..." rows="5" value=""></textarea>
+      </form>
     </div>
  <div>
    <button>Ask</button>
@@ -355,12 +356,13 @@ Here you can check out the news & events related to each and every NIT.</p>
 
  <div class="sign-form">
    <img class="cancel" onclick="cancel()" src="images/cut.png">
-    <p>Register Here</p>
+    <p class="mainh">Register Here</p>
    <div>
-   <input  type="text" placeholder="Name"  onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
-   <input  type="email" placeholder="Email" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
-   <input  type="text" placeholder="Mobile Number" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
-   <select name="college" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
+     <form action="F:\xampp\htdocs\imnitian\index.php" method="post">
+   <input  type="text"  name="user_name"  placeholder="Name"  onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
+   <input  type="email" name="user_email"  placeholder="Email" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
+   <input  type="text"  name="user_phone" placeholder="Mobile Number" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
+   <select name="user_clg" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
       <option>Select College</option>
       <option>National Institute Of technology Srinagar</option> 
       <option>National Institute Of technology Srinagar Silchar</option>
@@ -369,7 +371,7 @@ Here you can check out the news & events related to each and every NIT.</p>
       <option>Malviya Natioanl Institute Of Technology Jaipur</option>
       <option>Other</option>
       </select>
-      <select name="state" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
+      <select name="user_st" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
           <option>Select Your State</option>
           <option>Uttar Pradesh</option>
           <option>Jammu & Kashmir</option>
@@ -378,10 +380,11 @@ Here you can check out the news & events related to each and every NIT.</p>
           <option>Uttrakhand</option>
           <option>Bihar</option>
           </select>
-          <input type="password" placeholder="Password" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
+          <input name="user_pswd" type="password" placeholder="Password" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
           <input type="password" placeholder="Confirm Password" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
-          <button class="register">Register</button>
-          <a onclick="show_log();cancel();">already a member? login</a>
+          <button name="save" type="submit"  class="register">Register</button>
+        </form>
+         <p> <a onclick="show_log();cancel();">already a member? login</a></p>
   </div>
  </div>
 
@@ -396,9 +399,11 @@ Here you can check out the news & events related to each and every NIT.</p>
     <img class="cancel-log"  src="images/cut.png" onclick="cancel_log()">
     <p class="logx">Login</p>
 <div>
+  <form>
   <input type="text" placeholder="Email / Phone" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
   <input type="password" placeholder="Password" onmousedown="this.style.paddingLeft='10px';this.style.transition='0.2s'" onmouseout="this.style.paddingLeft='2px';this.style.transition='0.2s'">
   <button>Login</button>
+</form>
   <p class="signx"><a onclick="show_signup();cancel_log();">new member? register</a></p>
 </div>
 </div>
@@ -523,7 +528,7 @@ Here you can check out the news & events related to each and every NIT.</p>
 
 
 <!--
-  
+
 This command can be used to disable right click in the browsers
 
 ** oncontextmenu="return false"
