@@ -180,6 +180,20 @@ letter-spacing:0.5px;
    }
 
 
+   /*================  Page Preloader  =================*/ 
+
+	#loader{
+		width:100%;
+		height:100vh;
+		background:#DfDfDf url('loader.gif');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size:18rem;
+		position: fixed;
+		z-index:555;
+	}
+
+
  
    
 
