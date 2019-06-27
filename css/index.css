@@ -8,6 +8,10 @@
 * LinkedIn : https://www.linkedin.com/in/cyberthreatatnit/
 */
 
+
+
+/*================  Custom GOT Font  =================*/ 
+
 @font-face {
 	font-family: "got";
 	src: url("fonts/Game of Thrones.ttf");
@@ -24,6 +28,8 @@
 	body{
 		background: rgba(250,250,250,1);
 	}
+
+/*================  Page Preloader  =================*/ 
 
 	#loader{
 		width:100%;
@@ -88,6 +94,8 @@
 		padding-bottom:30px;
 	}
 	
+/*================  Join Now Button  =================*/ 
+
 	.join{
 		text-transform:uppercase;
 		color:rgba(255,255,255,0.8);
@@ -108,6 +116,8 @@
 		transition: 0.1s;
 	}
 	
+/*================  Banner Social Icons  =================*/ 
+
 	.banner .textx .social{
 		margin-top:2%;
 		
@@ -128,7 +138,8 @@
 		transition:0.3s;
 	}
 	
-	
+	/*================  Scroll Down Mouse Indecator  =================*/ 
+
 	.center{
 		top:95%;
 		left:50%;
@@ -187,6 +198,9 @@
 		}
 	}
 	
+
+/*================  About Us Section  =================*/ 
+
 	.about{
 		border-radius:5px;
 		display:flex;
@@ -354,6 +368,9 @@ letter-spacing: 0.7px;
 	margin-left:0.6rem;
  }
 
+
+/*================  Download Our App  =================*/ 
+
  /*.app{
 	background: rgba(0,0,0,0.8);
 	display: flex;
@@ -372,9 +389,6 @@ letter-spacing: 0.7px;
  text-align: center;
  font-weight:bold;
  color:rgba(256,256,256,0.7);
-}*/
-footer{
-	margin-top:3%;
 }
 
 .app div img{
@@ -382,8 +396,7 @@ footer{
 	transform: translate(-50%);
 	position: relative;
    }
-
-/*.app div button{
+.app div button{
 	background:rgba(256,0,0,0.9);
 	font-size:15px;
 	border:none;
@@ -397,79 +410,21 @@ footer{
 	color:rgba(256,256,256,0.8);
 	cursor:pointer;
 	outline: none;
-}*/
-
-/*back to top button*/
-#back-to-top{
-	z-index:3;
-	bottom:20px;
-	right:20px;
-	position:fixed;
-	font-size:26px;
-	width:45px;
-	height:45px;
-	color:rgba(0,0,0,0.9);
-	background:rgba(256,256,256,0.8);
-	cursor:pointer;
-	outline:none;
-	border: 3px solid rgba(0,0,0,01);
-	border-radius:50%;
-	transition-duration:0.2s;
-	transition-timing-function: ease-in-out;
-	transition-property: background-color, color;
-	display:none;
-}
- 
-#back-to-top:hover, #back-to-top:focus{
-	color:rgba(0,0,0,1);
-	background-color: rgba(256,256,256,1);
 }
 
-@media (max-width: 768px)
-{
-	#back-to-top{
-		font-size:18px;
-		width:38px;
-		height:38px;
-	}
+*/
+
+
+/*================  Fooetr Section  =================*/ 
+
+footer{
+	margin-top:3%;
 }
 
-/*Zoom in*/
-.btnEntrance{
-	animation-duration: 0.5s;
-	animation-fill-mode: both;
-	animation-name:btnEntrance;
-}
 
-@keyframes btnEntrance
-{
-	from{
-		opacity:0;
-		transform:scale3d(0.3,0.3,0.3);
-	}
-	to{
-		opacity:1;
-	}
-}
-/*Zoom Out*/
-.btnExit{
-	animation-duration: 0.25s;
-	animation-fill-mode: both;
-	animation-name:btnExit;
-}
 
-@keyframes btnExit
-{
- from{
-	 opacity:1;
- }
- to{
-	 opacity:0;
-	 transform:scale3d(0.3,0.3,0.3);
- }
-}
+/*================  Smooth Scrolling Property  =================*/ 
 
-/** This property is not compatible with all the browsers so try to use js*/
 html{
 	scroll-behavior: smooth;
 	overflow-x: hidden;

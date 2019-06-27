@@ -5,17 +5,16 @@
    font-family: sans-serif;
 }
 
+html{
+   scroll-behavior: smooth;
+   overflow-x: hidden;
+}
 
 body{
    background: rgba(250,250,250,1);
    color:rgba(80,80,80,1);
 }
 
-.wrapper{
-	width:100%;
-	height:100%;
-   position:absolute;
-	}
 
 .news-body{
    width:60%;
@@ -177,10 +176,10 @@ letter-spacing:0.5px;
 
    .ad-body .nad .nad-img{
       width:100%;
+      cursor: pointer;
    }
 
 
-   html{
-      scroll-behavior: smooth;
-      overflow-x: hidden;
-   }
+ 
+   
+

@@ -4,7 +4,6 @@
 */
 
 
-
 /*Parallax Scrolling= */
 /*
 $(window).scroll(function(){
