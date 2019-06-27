@@ -10,9 +10,54 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
 crossorigin="anonymous">
+<link href="css\navbar.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
+        <div class="wrapper">
+        <header id="f" style="background:black;">
+                <div class="logo">
+                <ul>
+                <li><a href="#"><img src="images\imnitian.png"></a></li>
+                <li><a href="#" style="font-family: 'Dancing Script', cursive;color:white;font-weight:bold;font-size:13px;letter-spacing: 0.7px;">I AM AN NITIAN</a></li>
+                </ul>
+                </div>
+                <nav class="active">
+                <ul>
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="team.html" class="homex">Our team</a></li>
+                <li><a href="news.html" class="homex">News</a></li>
+                <li><a href="#about" class="homex">About Us</a></li>
+                <li><a class="sub-menu">Exams <i class="fas fa-caret-square-down"></i></a>
+                <ul>
+                <li><a href="#">Jee</a></li>
+                <li><a href="#">Gate</a></li>
+                <li><a href="#">Neet</a></li>
+                <li><a href="#">Camt</a></li>
+                <li><a href="#">Gre</a></li>
+                </ul>
+                </li>
+                <li>
+                <button onclick="search()" style="text-transform: uppercase;letter-spacing: 0.8px; font-weight: bold;">Search <i class="fas fa-search"></i></button>
+                </li>
+                <li><a class="homex" style="cursor:pointer;">User &nbsp<i class="fas fa-user-graduate"></i></a></li>
+                </ul>
+                </nav>
+                
+                <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                </div>
+                
+                
+                <!--serach Box-->
+                <div class="search-popup" id="searchx" style="display:none;">
+                    <input type="text"  placeholder="Search"><button><i class="fas fa-search"></i></button>
+                  </div>
+                  <!--xxxxx-->
+                
+                </header>
+                
+
 <div class="news-body">
         <div class="news-img"><img src="images/nature sri.jpg"></div>
         <div class="news-content">
@@ -64,20 +109,21 @@ crossorigin="anonymous">
             </p>
         <p class="cmnt">Comments</p>
     </div>
-    <div class="txtar"><textarea rows="7" placeholder="Write Your Comments Here..."></textarea><br>
+    <div class="txtar"><textarea rows="6" placeholder="Write Your Comments Here..."></textarea><br>
     <button class="btnx">Comment</button>
     </div>
     <div class="comments">
         <div>
-                <p style="font-size:15px;color:red;">Shubham Commented</p>
-            <p>Very Nice Article</p>
-            <p class="reply" style="cursor:pointer;color:blue;font-size:15px;">Reply <i class="fas fa-reply"></i></p>
+                <p style="font-size:15px;font-weight: bold;">Shubham</p>
+            <p style="font-size:14px;">Very Nice Article</p>
+            <p class="reply" style="cursor:pointer;color:blue;font-size:14px;">Reply <i class="fas fa-reply"></i></p>
         </div>
+        <div class="cmt-line"></div>
         <div>
-                <p style="font-size:15px;color:red;">Abhay Commented</p>
-                <p>Very Nice Article</p>
+                <p style="font-size:14px;font-weight: bold;">Abhay</p>
+                <p style="font-size:14px;">Good</p>
                 <p class="reply" style="cursor:pointer;color:blue;font-size:15px;">Reply <i class="fas fa-reply"></i></p>
-            </div
+        </div>
     </div>
         </div>
 <div class="ad-body">
@@ -121,11 +167,25 @@ crossorigin="anonymous">
                                      <a href="#">Read More  <i class="fas fa-chevron-circle-right"></i></a>
                             </p></div>
                         </div>
-                        
+
+                        <div class="flash">
+                            <div class="nimg"> <img src="images/nature sri.jpg"></div>
+                            <div class="ncontent"><p>Hollywood star Leonardo DiCaprio is renowned for his work.
+                                    This is an insult to democracy and demands strictest action. 
+                                     <a href="#">Read More  <i class="fas fa-chevron-circle-right"></i></a>
+                            </p></div>
+                        </div>
+
+                      <div class="nad">
+                   <img src="images/ad-demo.jpg" class="nad-img">
+                      </div>  
                         
         
     </div>
-
+</div>
 </body>
 
-</html>
+
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>

@@ -5,15 +5,23 @@
    font-family: sans-serif;
 }
 
+
 body{
    background: rgba(250,250,250,1);
    color:rgba(80,80,80,1);
 }
+
+.wrapper{
+	width:100%;
+	height:100%;
+   position:absolute;
+	}
+
 .news-body{
    width:60%;
    height:auto;
    background: transparent;
-   margin:1rem 1rem 0 100px;
+   margin:6rem 1rem 0 100px;
 }
 
 .news-body .news-img{
@@ -40,17 +48,17 @@ letter-spacing:0.5px;
 
 .news-body .news-content p span{
   font-size:38px;
-  font-family: bold;
+  font-family:serif;
   line-height:40px;
    }
 
 .news-body .news-content .ldc{
-   font-size:21px;
+   font-size:18px;
    margin-top:15px;
 }
 
 .news-body .news-content .ldc .x{
-   font-size:15px;
+   font-size:14px;
    font-family: sans-serif;
 }
 
@@ -91,19 +99,25 @@ letter-spacing:0.5px;
 }
 
 .news-body .comments div{
-   margin:10px;
+   margin:3px;
 }
 .news-body .comments div p{
    margin-top:8px;
    letter-spacing: 0.5px;
 }
+.news-body .comments .cmt-line{
+   width:20rem;
+   height:1px;
+   background:rgba(200,200,200,1);
+   margin-top:10px;
+}
+
 
 .ad-body{
    width:30%;
-   height:100vh;
-   top:0;
+   top:5rem;
    right:0;
-   position: fixed;
+   position: absolute;
    display:flex;
    align-items:center;
    flex-direction: column;
@@ -154,4 +168,19 @@ letter-spacing:0.5px;
 
    .ad-body .flash .ncontent p a:hover{
       color:red;
+   }
+
+   .ad-body .nad{
+      width:100%;
+      margin-top:10px;
+   }
+
+   .ad-body .nad .nad-img{
+      width:100%;
+   }
+
+
+   html{
+      scroll-behavior: smooth;
+      overflow-x: hidden;
    }
