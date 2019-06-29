@@ -70,6 +70,7 @@ body{
              transform-origin:right;
              transform:scaleX(0);
              position: absolute;
+             z-index:1;
          }
  
          .popup .popup-content{
@@ -92,7 +93,7 @@ body{
  
  
       .popup .popup-content   input,.textarr{
-    
+        resize: none;
                margin:20px auto;
              display:block;
              width:85%;
