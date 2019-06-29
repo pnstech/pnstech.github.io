@@ -29,16 +29,17 @@
           var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
           var scrolled = (winScroll / height) * 100;
           document.getElementById("myBar").style.width = scrolled + "%";
-
-        if($(window).scrollTop())
+        
+          if($(window).scrollTop())
         {
         $('header').addClass('black');
         }
-        else
+        else 
         {
         $('header').removeClass('black');
         }
-        })
+        
+        });
 
 
         /*==============  Back To Top Button   =============*/
@@ -75,5 +76,10 @@ function backTop()
 window.scrollTo(0,0);
 }
 
+ /*====================  Preloader  =========================*/
  
-
+function loadme()
+{
+   var loaderx=document.getElementById('loader');
+loaderx.style.display='none';
+}

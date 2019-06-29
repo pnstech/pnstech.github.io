@@ -13,12 +13,19 @@ crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 <link href="css/navbar.css" type="text/css" rel="stylesheet">
 <link href="css/back-to-top.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="js\jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 
-<body>
+<body onload="loadme()">
         <button id="back-to-top"><i class="fas fa-angle-double-up"></i></button>
 
+        <div id="loader">
+          </div>
+
+        <div class="wrapper">
+            <div class="progress-container">
+               <div class="progress-bar" id="myBar"></div>
+             </div>
         <header id="f" style="background:black;">
                 <div class="logo">
                 <ul>
@@ -232,7 +239,7 @@ crossorigin="anonymous">
    2019 &nbsp| &nbsp I AM AN NITIAN &nbsp | &nbsp DESIGNED AND DEVELOPED BY SHUBHAM MAURYA &nbsp|&nbsp NIT SRINAGAR</p>
    </div>
    </footer>
-
+</div>
 
 </body>
 

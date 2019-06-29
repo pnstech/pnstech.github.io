@@ -16,6 +16,24 @@ body{
 }
 
 
+#loader{
+   width:100%;
+   height:100vh;
+   background:#DfDfDf url('loader.gif');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size:18rem;
+   position: fixed;
+   z-index:555;
+ }
+
+
+.wrapper{
+   width:100%;
+   height:100%;
+   position:absolute;
+   }
+
 .news-body{
    width:60%;
    height:auto;
@@ -297,3 +315,17 @@ footer{
  
    
 
+/*scroll Indicator*/
+.wrapper .progress-container {
+   width: 100%;
+   height: 6px;
+   background:rgba(80,80,80,0.1);
+   z-index: 1;
+   position: fixed;
+ }
+ 
+ .wrapper .progress-container .progress-bar {
+   height: 6px;
+   background:  #4caf50;
+   width: 0%;
+ }

@@ -3,14 +3,34 @@
     font-family: sans-serif;
     margin:0;
     padding: 0;
+    box-sizing: border-box;
   }
 
   body{
     background: rgba(250,250,250,1);
 }
+
+#loader{
+  width:100%;
+  height:100vh;
+  background:#DfDfDf url('loader.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:18rem;
+  position: fixed;
+  z-index:555;
+}
+
+
   html{
  scroll-behavior: smooth;
   }
+
+  .wrapper{
+    width:100%;
+    height:100%;
+    position:absolute;
+    }
   
   .explore{
       width:75%;
@@ -267,16 +287,15 @@ footer{
 
 
 /*scroll Indicator*/
-.progress-container {
+ .progress-container {
   width: 100%;
   height: 6px;
   background:rgba(80,80,80,0.1);
   z-index: 1;
   position: fixed;
-  top:0;
 }
 
-.progress-bar {
+ .progress-bar {
   height: 6px;
   background:  #4caf50;
   width: 0%;
