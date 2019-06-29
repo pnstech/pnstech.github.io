@@ -10,6 +10,7 @@
 
 *{
   font-family: sans-serif;
+  word-wrap:break-word;
 }
 
 body{
@@ -19,10 +20,10 @@ body{
  
  /*------------------------*/
  
-  #mySidenav{
+  #mySidenav, #mySidenavx{
  float:right;
  }
- #mySidenav a {
+ #mySidenav a, #mySidenavx a{
    position: absolute;
    right: -15px;
    transition: 0.2s;
@@ -35,7 +36,8 @@ body{
    letter-spacing:0.2px;
  }
  
-  #mySidenav a:hover {
+ 
+  #mySidenav a:hover, #mySidenavx a:hover {
    right:-10px;
  }
  
@@ -45,8 +47,15 @@ body{
    height:120px;
    cursor: pointer;
  }
+
+ #update{
+  top:170%;
+    background-color: #4CAF50;
+    height:112px;
+    cursor: pointer;
+  }
  
- #feedback span {
+ #feedback span, #update span{
    transform: rotate(90deg);
    transform-origin: left 0;
    float: left;
@@ -57,7 +66,7 @@ body{
  
  /* feedback popup*/
  
- .popup{
+ .popup, .popupx{
              background:transparent;
              width:100%;
              height: 100vh;
@@ -81,8 +90,8 @@ body{
              border-radius:5px 0 0 5px;
              position:relative;
          }
- 
-         .popup .popup-content p{
+
+         .popup .popup-content p,.popupx .popupx-content .uph{
            color:rgba(80,80,80,1);
            font-size:23px;
            font-weight:bold;
@@ -110,7 +119,7 @@ body{
  
        
  
-         .popup .popup-content .close{
+         .popup .popup-content .close, .popupx .popupx-content .close{
              top:5px;
              left:5px;
              position:absolute;
@@ -129,6 +138,77 @@ body{
                margin-top:10% 0 5% 0;
          }
  
+
+/*============ Update Popup  ================*/
+
+.popupx .popupx-content{
+  height:auto;
+  width:370px;
+  box-shadow:0 0 4px 2px rgba(0,0,0,0.7);
+    background:rgba(252,252,252,1);
+  border-radius:5px 0 0 5px;
+  position:relative;
+}
+
+.popupx .popupx-content .upd{
+display: flex;
+flex-direction:column;
+align-items: center;
+justify-content: center;
+margin:10px 25px 25px 25px;
+}
+
+.popupx .popupx-content .upd .updx{
+width:100%;
+text-align:justify;
+padding:8px 0 8px 0;
+border-bottom:1px solid rgba(200,200,200,1);
+letter-spacing: 0.3px;
+color:rgba(20,20,20,1);
+}
+
+  .popupx .popupx-content .upd .updx p .blinker{
+    animation: blinker 1.5s linear infinite;
+    font-size:13px;
+ background: -webkit-linear-gradient(45deg,rgba(256,0,0,0.6),rgba(0,256,0,0.6),yellow);
+    padding:2px 10px 2px 10px;
+    width: 160px;
+    height:130px;
+    border-radius: 50%;
+    font-style: italic;
+    color:rgba(0,0,0,1);
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 0.4px;
+    }
+    @keyframes blinker {
+
+    0%{
+  opacity:0.2;
+
+    }
+
+    50%{
+      opacity:0.6;
+
+    }
+
+   100%{
+      opacity:1;
+  
+    }
+    }
+
+
+.up-line{
+  width:80px;
+  height:3px;
+  background:red;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  position: relative;
+}
+
  
          /*Signup popup*/
  

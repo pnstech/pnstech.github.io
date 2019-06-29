@@ -54,6 +54,16 @@ function  fun1()
       TweenMax.to('.popup',0.5,{scaleX: 0});
     }
 
+   //display update box
+function  fun3()
+{
+  TweenMax.to('.popupx',0.5,{scaleX: 1});
+}
+//hide update onclick cut     
+function fun4(){
+  TweenMax.to('.popupx',0.5,{scaleX: 0});
+}
+
 
 /*---> Screen Preloader <---*/
 
