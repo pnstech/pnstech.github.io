@@ -486,15 +486,28 @@ line-height:20px;
                
              }
            
+             .search-popup div{
+               height:2.22rem;
+               overflow:hidden; 
+             }
              .search-popup button{
                width:10%;
-               padding:9.6px 0 9.6px 0;
+               padding:2px 7.7px 0.8% 3px;
+               height:2.22rem;
                border:none;
                border-left:1px solid rgba(160,160,160,1);
                background:rgba(230,230,230,0.9);
                border-radius:0 5px 5px 0;
                cursor:pointer;
                letter-spacing:0.8px;
+             }
+
+             @media (max-height:7680px) /* for search to be responsive*/
+             {
+              .search-popup button
+              {
+                padding:1.5px 7.7px 0.8% 3px;
+              }
              }
            
              .search-popup i{
@@ -514,6 +527,7 @@ line-height:20px;
                font-size:15.5px;
                padding:2.7%;
                width:90%;
+               height:2.22rem;
                outline:none;
                border:none;
                position: relative;

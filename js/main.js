@@ -30,7 +30,7 @@
           var scrolled = (winScroll / height) * 100;
           document.getElementById("myBar").style.width = scrolled + "%";
         
-          if($(window).scrollTop())
+        if($(window).scrollTop())
         {
         $('header').addClass('black');
         }
