@@ -77,10 +77,10 @@ TweenMax.from('.logo',1.5,{opacity:0,scale:0, ease:Bounce.easeOut});
 TweenMax.staggerFrom('.svg',0.4,{opacity:0,y:100, delay:0.5},0.2/* This is duratio9n for social widgets*/);
 
 /*============  Login time out ===========*/
-
+/*
 setTimeout(function(){ 
  show_log();
- }, 5000);
+ }, 5000);*/
 }
 
 /*---> Alert Box <---*/
